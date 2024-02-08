@@ -1,6 +1,9 @@
 import React from 'react'
 import { Poppins } from "next/font/google"
 import type { Metadata } from 'next'
+import Header from '@/components/dashboard/Header'
+import Aside from '@/components/dashboard/Aside'
+import "../globals.css"
 
 const poppins = Poppins({ subsets: ['devanagari'], weight: "400" })
 
@@ -17,6 +20,8 @@ function DashboardLayout({ children }:
     }>) {
     return (
         <section className={poppins.className}>
+            <Header />
+            <Aside />
             {children}
         </section>
     )

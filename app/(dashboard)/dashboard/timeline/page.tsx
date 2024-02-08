@@ -1,11 +1,10 @@
+import Timeline from '@/components/dashboard/Timeline'
 import React from 'react'
 
 type Props = {}
 
 function page({ }: Props) {
-    return (
-        <div>page</div>
-    )
+    return <Timeline /> 
 }
 
 export default page
