@@ -94,3 +94,58 @@
 button{
   @apply hover:bg-none
 }
+
+.loadmorebg{
+ background: hsla(241, 100%, 81%, 1);
+
+background: linear-gradient(90deg, hsla(241, 100%, 81%, 1) 100%, hsla(0, 0%, 100%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(241, 100%, 81%, 1) 100%, hsla(0, 0%, 100%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(241, 100%, 81%, 1) 100%, hsla(0, 0%, 100%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#A2A0FF", endColorstr="#FFFFFF", GradientType=1 );
+@apply text-white
+}
+
+.card-1-bg{
+  background: hsla(245, 100%, 74%, 1);
+
+background: linear-gradient(45deg, hsla(245, 100%, 74%, 1) 20%, hsla(304, 100%, 74%, 1) 100%, hsla(0, 0%, 100%, 1) 100%, hsla(302, 93%, 73%, 1) 100%);
+
+background: -moz-linear-gradient(45deg, hsla(245, 100%, 74%, 1) 20%, hsla(304, 100%, 74%, 1) 100%, hsla(0, 0%, 100%, 1) 100%, hsla(302, 93%, 73%, 1) 100%);
+
+background: -webkit-linear-gradient(45deg, hsla(245, 100%, 74%, 1) 20%, hsla(304, 100%, 74%, 1) 100%, hsla(0, 0%, 100%, 1) 100%, hsla(302, 93%, 73%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#8378FF", endColorstr="#FF78F5", GradientType=1 );
+@apply text-white
+}
+
+.card-2-bg {
+  background: hsla(115, 100%, 64%, 1);
+
+background: linear-gradient(45deg, hsla(115, 100%, 64%, 1) 0%, hsla(191, 96%, 64%, 1) 100%);
+
+background: -moz-linear-gradient(45deg, hsla(115, 100%, 64%, 1) 0%, hsla(191, 96%, 64%, 1) 100%);
+
+background: -webkit-linear-gradient(45deg, hsla(115, 100%, 64%, 1) 0%, hsla(191, 96%, 64%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#56FF47", endColorstr="#4BDBFB", GradientType=1 );
+
+@apply text-white
+}
+
+.card-3-bg{
+
+  background: hsla(0, 100%, 80%, 1);
+
+background: linear-gradient(45deg, hsla(0, 100%, 80%, 1) 0%, hsla(39, 100%, 80%, 1) 100%);
+
+background: -moz-linear-gradient(45deg, hsla(0, 100%, 80%, 1) 0%, hsla(39, 100%, 80%, 1) 100%);
+
+background: -webkit-linear-gradient(45deg, hsla(0, 100%, 80%, 1) 0%, hsla(39, 100%, 80%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF9999", endColorstr="#FFDB99", GradientType=1 );
+@apply text-white
+}
+

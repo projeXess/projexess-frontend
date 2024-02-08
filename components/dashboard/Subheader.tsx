@@ -9,10 +9,10 @@ type Props = {
 
 function Subheader({ title }: Props) {
     return (
-        <>
+        <div className='w-full p-4 flex flex-col gap-7'>
             <div>
 
-                <h1 className="text-gray-400">Project / Project Name</h1>
+                <h1 className="text-gray-400 text-[0.9rem]">Project / Project Name</h1>
             </div>
             <div>
 
@@ -33,7 +33,7 @@ function Subheader({ title }: Props) {
                     <Search />
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 
