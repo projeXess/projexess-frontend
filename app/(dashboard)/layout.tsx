@@ -23,7 +23,7 @@ function DashboardLayout({ children }:
             <Header />
             <div className='w-full flex items-start justify-normal h-full'>
                 <Aside />
-                <div className='w-[80%] bg-[#d8ecff] h-full'>
+                <div className='lg:w-[80%] w-full bg-[#d8ecff] h-full'>
                     {children}
                 </div>
             </div>
