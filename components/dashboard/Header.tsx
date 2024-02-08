@@ -24,7 +24,7 @@ function Header({ }: Props) {
                             {link.name}
                             <ChevronDown />
                         </Link>
-                    ))
+                    )) 
                 }
 
                 <Button className='bg-[#3AA1FF] text-white font-bold'>
@@ -37,7 +37,7 @@ function Header({ }: Props) {
                     <Search />
                 </div>
                 <Button className='bg-white hover:bg-whit' size={'icon'}>
-                    <BellIcon className='bg-white text-black rotate-[45deg]' />
+                    <BellIcon fill='black' className='bg-white text-black rotate-[45deg]' />
                 </Button>
 
                 <Button className='bg-white hover:bg-white hidden lg:block' size={'icon'}>

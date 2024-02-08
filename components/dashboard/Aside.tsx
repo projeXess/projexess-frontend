@@ -1,6 +1,9 @@
 import React from 'react'
 import { Avatar } from '../ui/avatar'
 import { Button } from '../ui/button'
+import { asideItems, settingsItems } from '@/utils/constants'
+import Collapsible from '../ui/Collapsible'
+import Link from 'next/link'
 
 type Props = {}
 
@@ -16,8 +19,30 @@ function Aside({ }: Props) {
 
             </div>
             <Button className='btn-outlined'>Take Tour</Button>
+
+            <div>
+                {
+                    asideItems.map(item => (
+                        <Collapsible title={item.title} value={item.children} key={item.title} />
+                    ))
+                }
+            </div>
+
+            <div className='w-full border-t-2 p-4 flex flex-col gap-4'>
+                {
+                    settingsItems.map(item => (
+                        <Link href={item.link} className='flex item-center gap-2 text-[#5C5C5C]' key={item.name} >
+                            {item.icon}
+                            {item.name}
+                        </Link>
+                    ))
+                }
+
+                <p className='font-bold text-[0.6rem] tracking-wider mt-11 text-center'>Your Project is managed in <br></br> this Panel</p>
+            </div>
         </div>
     )
 }
 
 export default Aside
+
