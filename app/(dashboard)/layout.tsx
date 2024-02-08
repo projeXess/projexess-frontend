@@ -21,8 +21,12 @@ function DashboardLayout({ children }:
     return (
         <section className={poppins.className}>
             <Header />
-            <Aside />
-            {children}
+            <div className='w-full flex items-start justify-normal h-full'>
+                <Aside />
+                <div className='w-[80%] bg-[#d8ecff] h-full'>
+                    {children}
+                </div>
+            </div>
         </section>
     )
 }

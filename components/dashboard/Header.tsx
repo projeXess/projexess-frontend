@@ -10,7 +10,7 @@ type Props = {}
 
 function Header({ }: Props) {
     return (
-        <div className='w-full p-2 flex items-center justify-between border-b-2'>
+        <div className='w-full p-2 flex items-center justify-between border-b-2 sticky bg-white top-0 left-0 '>
             <div className='flex items-center gap-2'>
                 <Button className='bg-white hover:bg-white'>
                     <MenuIcon className='bg-white text-black' />
