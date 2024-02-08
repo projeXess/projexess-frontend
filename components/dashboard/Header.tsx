@@ -10,7 +10,7 @@ type Props = {}
 
 function Header({ }: Props) {
     return (
-        <div className='w-full p-2 flex items-center justify-between border-b-2 sticky bg-white top-0 left-0 '>
+        <div className='w-full p-2 flex items-center justify-between border-b-2 sticky bg-white top-0 left-0  z-50'>
             <div className='flex items-center gap-2'>
                 <Button className='bg-white hover:bg-white'>
                     <MenuIcon className='bg-white text-black' />
@@ -32,8 +32,8 @@ function Header({ }: Props) {
                 </Button>
             </div>
             <div className='flex items-center gap-2'>
-                <div className='hidden lg:flex items-center p-1 w-[200px] border-2 rounded-md'>
-                    <Input placeholder='search' className=' border-none w-full p-0 outline-none' />
+                <div className='flex items-center p-1 w-[180px] justify-around border-2 rounded-xl bg-white pr-3 pl-3'>
+                    <Input placeholder='search' className=' border-none w-full p-0 focus:outline-none' />
                     <Search />
                 </div>
                 <Button className='bg-white hover:bg-whit' size={'icon'}>

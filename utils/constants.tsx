@@ -1,4 +1,6 @@
+import { CollapseProps } from "antd";
 import { BotIcon, CircuitBoard, File, FileStack, Settings, TagsIcon } from "lucide-react";
+import Link from "next/link";
 
 export const navLinks = [
   { name: "Your tasks", link: "" },
@@ -8,26 +10,7 @@ export const navLinks = [
 ];
 
 
-export const planningItems = [
-  { name: "Timeline", link: "/dashboard/timeline", icon: <FileStack /> },
-  { name: "Board", link: "/dashboard/board", icon: <CircuitBoard /> },
-  { name: "Backing", link: "dashboard/backing", icon: <FileStack /> }
-]
 
-export const devItems = [
-  { name: "Code", link: "", icon: <TagsIcon /> },
-]
-
-export const assItems = [
-  { name: "Ai Bot", link: "", icon: <BotIcon /> },
-]
-
-
-export const asideItems = [
-  { title: "Planning", children: planningItems },
-  { title: "Development", children: devItems },
-  { title: "Assistant", children: assItems }
-]
 
 export const settingsItems = [
   { name: "Documents", link: "", icon: <File /> },
