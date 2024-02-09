@@ -5,6 +5,8 @@ import Header from '@/components/dashboard/Header'
 import Aside from '@/components/dashboard/Aside'
 import "../globals.css"
 import DashboardAppProvider from '@/providers/Dashboard/DashboardAppProvider'
+import AsideProvider from '@/providers/Dashboard/AsideProvider'
+import ResponsiveAside from '@/components/dashboard/ResponsiveAside'
 
 const poppins = Poppins({ subsets: ['devanagari'], weight: "400" })
 
@@ -20,7 +22,8 @@ function DashboardLayout({ children }:
         children: React.ReactNode
     }>) {
     return (
-        <DashboardAppProvider>
+        // <DashboardAppProvider>
+        <AsideProvider>
             <section className={poppins.className}>
                 <Header />
                 <div className='w-full flex items-start justify-normal h-full '>
@@ -30,7 +33,8 @@ function DashboardLayout({ children }:
                     </div>
                 </div>
             </section>
-        </DashboardAppProvider>
+        </AsideProvider>
+        // </DashboardAppProvider>
     )
 }
 

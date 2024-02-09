@@ -1,15 +1,12 @@
 'use client'
+import ResponsiveAside from '@/components/dashboard/ResponsiveAside'
+import { DefaultType } from '@/types/providerTypes'
 import React, { useState } from 'react'
 
 type Props = {
     children: React.ReactNode
 }
 
-type DefaultType = {
-    isOpen: boolean,
-    setIsOpen: (vl: boolean) => void
-
-}
 
 const DefaultValues: DefaultType = {
     isOpen: false,

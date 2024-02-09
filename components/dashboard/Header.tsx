@@ -1,26 +1,33 @@
 'use client'
 import { navLinks } from '@/utils/constants'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { Button } from '../ui/button'
 import { Input } from '../ui/input'
 import { Bell, BellIcon, ChevronDown, InboxIcon, MailQuestion, MenuIcon, Search } from 'lucide-react'
 import { Avatar } from '../ui/avatar'
+import { AsideContext } from '@/providers/Dashboard/AsideProvider'
 
 type Props = {
 }
 
 function Header({ }: Props) {
+    const { setIsOpen } = useContext(AsideContext)
     return (
         <>
             <div className='w-full p-2 flex items-center justify-between border-b-2 sticky bg-white top-0 left-0  z-50'>
                 <div className='flex items-center gap-2'>
-                    <Button className='bg-white hover:bg-white'>
+                    <Button className='bg-white hover:bg-white'
+                        onClick={() => {
+                            alert("Hello world")
+                            setIsOpen(true)
+                        }}
+                    >
                         <MenuIcon className='bg-white text-black' />
                     </Button>
-                    <h1 className='lg:text-[1.5rem] text-[0.8rem] font-bold'>ProjeXess</h1>
+                    <h1 className='lg:text-[1.5rem] text-[0.8rem] font-bold' >ProjeXess</h1>
                 </div>
-                <div className='hidden p-1 items-center gap-7 lg:flex'>
+                <div className='hidden p-1 items-center gap-7 md:flex'>
                     {
                         navLinks.map(link => (
                             <Link href={link.link} className='flex items-center gap-2 cursor-pointer hover:text-black text-[#5C5C5C]' key={link.name}>
@@ -47,7 +54,9 @@ function Header({ }: Props) {
                         <InboxIcon className='bg-white text-black' />
                     </Button>
 
-                    <Avatar className='bg-[#FF9898]'>
+                    <Avatar className='bg-[#FF9898]'
+                        
+                    >
 
                     </Avatar>
                 </div>

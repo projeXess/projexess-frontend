@@ -1,20 +1,19 @@
-import React, { useState } from 'react';
+'use client'
+import React, { useContext, useState } from 'react';
 import type { DrawerProps, RadioChangeEvent } from 'antd';
 import { Button, Drawer, Radio, Space } from 'antd';
 import Aside from './Aside';
+import { AsideContext } from '@/providers/Dashboard/AsideProvider';
+import { DefaultType } from '@/types/providerTypes';
 
 
-type Props = {
-    open: boolean,
-    setOpen: (vl: boolean) => void
-}
+type Props = DefaultType;
 
-const ResponsiveAside = ({ open, setOpen }: Props) => {
+const ResponsiveAside = ({ isOpen, setIsOpen }: Props) => {
     const [placement, setPlacement] = useState<DrawerProps['placement']>('left');
 
-
     const onClose = () => {
-        setOpen(false);
+        setIsOpen(false);
     };
 
 
@@ -24,9 +23,9 @@ const ResponsiveAside = ({ open, setOpen }: Props) => {
             <Drawer
                 title="Basic Drawer"
                 placement={placement}
-                closable={false}
+                closable={true}
                 onClose={onClose}
-                open={open}
+                open={isOpen}
                 key={placement}
             >
                 <Aside />
