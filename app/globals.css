@@ -76,7 +76,13 @@
 }
 
 .btn-outlined {
-  @apply bg-white border-2 rounded-full border-2 border-[#3AA1FF] text-[#3AA1FF]
+  @apply bg-white rounded-full border-2 border-[#3AA1FF] text-[#3AA1FF] hover:bg-[#3AA1FF] hover:text-white
+}
+
+
+.btn-outlined:hover{
+  background: #3AA1FF !important;
+  color: white !important;
 }
 
 .ant-collapse-header{
@@ -149,3 +155,13 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF9999", en
 @apply text-white
 }
 
+
+.btn-filled{
+ @apply flex items-center gap-2 bg-[#3AA1FF] text-white rounded-full hover:bg-white hover:text-[#3AA1FF] border-2
+}
+
+.btn-filled:hover{
+  background: white !important;
+  color: #3AA1FF !important;
+  border: 2px solid #3AA1FF;
+}
