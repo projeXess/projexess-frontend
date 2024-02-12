@@ -1,10 +1,10 @@
 'use client'
 import { navLinks } from '@/utils/constants'
 import Link from 'next/link'
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import { Button } from '../ui/button'
 import { Input } from '../ui/input'
-import { Bell, BellIcon, ChevronDown, InboxIcon, MailQuestion, MenuIcon, Search } from 'lucide-react'
+import { BellIcon, ChevronDown, InboxIcon, MenuIcon, Search } from 'lucide-react'
 import { Avatar } from '../ui/avatar'
 import { AsideContext } from '@/providers/Dashboard/AsideProvider'
 
@@ -12,15 +12,15 @@ type Props = {
 }
 
 function Header({ }: Props) {
-    const { setIsOpen } = useContext(AsideContext)
+    const { setState, state } = useContext(AsideContext)
     return (
         <>
             <div className='w-full p-2 flex items-center justify-between border-b-2 sticky bg-white top-0 left-0  z-50'>
                 <div className='flex items-center gap-2'>
                     <Button className='bg-white hover:bg-white'
                         onClick={() => {
-                            alert("Hello world")
-                            setIsOpen(true)
+
+                            setState((prev: boolean) => !prev)
                         }}
                     >
                         <MenuIcon className='bg-white text-black' />
@@ -37,7 +37,7 @@ function Header({ }: Props) {
                         ))
                     }
 
-                    <Button className='bg-[#3AA1FF] text-white font-bold'>
+                    <Button className='bg-[#3AA1FF] text-white font-bold hidden lg:block md:text-[1rem] text-[0.6rem]'>
                         Create
                     </Button>
                 </div>
@@ -46,21 +46,22 @@ function Header({ }: Props) {
                         <Input placeholder='search' className=' border-none w-full p-0 focus:outline-none' />
                         <Search />
                     </div>
-                    <Button className='bg-white hover:bg-white hidden lg:block' size={'icon'}>
+                    <Button className='bg-white hover:bg-white size-6 lg:size-10' size={'icon'}>
                         <BellIcon fill='black' className='bg-white text-black rotate-[45deg]' />
                     </Button>
 
-                    <Button className='bg-white hover:bg-white hidden lg:block ' size={'icon'}>
+                    <Button className='bg-white hover:bg-white size-6 lg:size-10' size={'icon'}>
                         <InboxIcon className='bg-white text-black' />
                     </Button>
 
-                    <Avatar className='bg-[#FF9898]'
-                        
+                    <Avatar className='bg-[#FF9898] size-10 lg:size-10'
+
                     >
 
                     </Avatar>
                 </div>
             </div>
+
 
         </>
     )

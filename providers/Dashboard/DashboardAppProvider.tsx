@@ -1,7 +1,7 @@
 'use client'
+import dynamic from 'next/dynamic';
 import React, { createContext } from 'react'
-import AsideProvider from './AsideProvider';
-import ResponsiveAside from '@/components/dashboard/ResponsiveAside';
+const AsideProvider = dynamic(() => import('./AsideProvider'));
 
 type Props = {
     children: React.ReactNode
