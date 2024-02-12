@@ -46,7 +46,7 @@ function Aside({ }: Props) {
                                 </div>
                                 {pathname === item.link &&
                                     (
-                                        <span className=' justify-self-end bg-white rounded-full text-[#3AA1FF]'>
+                                        <span className=' justify-self-end bg-white rounded-full text-[#3AA1FF] p-1'>
                                             <ArrowRight />
                                         </span>
                                     )}
@@ -70,7 +70,7 @@ function Aside({ }: Props) {
                                 </div>
                                 {pathname === item.link &&
                                     (
-                                        <span className=' justify-self-end bg-white rounded-full text-[#3AA1FF]'>
+                                        <span className=' justify-self-end bg-white rounded-full text-[#3AA1FF] p-1'>
                                             <ArrowRight />
                                         </span>
                                     )}
@@ -94,7 +94,7 @@ function Aside({ }: Props) {
                                 </div>
                                 {pathname === item.link &&
                                     (
-                                        <span className=' justify-self-end bg-white rounded-full text-[#3AA1FF]'>
+                                    <span className=' justify-self-end bg-white rounded-full text-[#3AA1FF] p-1'>
                                             <ArrowRight />
                                         </span>
                                     )}

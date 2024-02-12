@@ -13,7 +13,7 @@ function page({ }: Props) {
             <div className="w-full bg-white p-4 rounded-sm flex flex-col gap-10 ">
                 <h1 className='font-bold text-[1.2rem]'>Completed Tasks</h1>
 
-                <div className='w-full grid md:grid-cols-2 grid-cols-1 gap-4 p-5  '>
+                <div className='w-full grid sm:grid-cols-2 grid-cols-1 gap-4 p-5  '>
                     {
                         tasksCompleted.map(task => (
                             <TaskCompleted {...task} key={task.name} />
