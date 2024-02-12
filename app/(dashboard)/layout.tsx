@@ -4,6 +4,9 @@ import type { Metadata } from 'next'
 import Header from '@/components/dashboard/Header'
 import Aside from '@/components/dashboard/Aside'
 import "../globals.css"
+import DashboardAppProvider from '@/providers/Dashboard/DashboardAppProvider'
+import AsideProvider from '@/providers/Dashboard/AsideProvider'
+import ResponsiveAside from '@/components/dashboard/ResponsiveAside'
 
 const poppins = Poppins({ subsets: ['devanagari'], weight: "400" })
 
@@ -19,15 +22,19 @@ function DashboardLayout({ children }:
         children: React.ReactNode
     }>) {
     return (
-        <section className={poppins.className}>
-            <Header />
-            <div className='w-full flex items-start justify-normal h-full '>
-                <Aside />
-                <div className='lg:w-[80%] w-full bg-[rgb(234,245,255)] h-full'>
-                    {children}
+        // <DashboardAppProvider>
+        <AsideProvider>
+            <section className={poppins.className}>
+                <Header />
+                <div className='w-full flex items-start justify-normal h-full '>
+                    <Aside />
+                    <div className='lg:w-[80%] w-full bg-[rgb(234,245,255)] h-auto'>
+                        {children}
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </AsideProvider>
+        // </DashboardAppProvider>
     )
 }
 

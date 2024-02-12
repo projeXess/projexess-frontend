@@ -25,3 +25,11 @@ export const teams = [
   { name: "Designers", members: 2, progress: 87, task: "Front end developers were assigned to finish the dashboards and main functionalities on the User interface first and the authentication pages." },
 
 ]
+
+
+export const tasksCompleted = [
+  { name: "Homepage", description: "The home page was completed with all needed functionalities. The main section is completed, the footer and others are also completed on the home page." },
+  { name: "Documentation", description: "The home page was completed with all needed functionalities. The main section is completed, the footer and others are also completed on the home page." },
+  { name: "Homepage", description: "The home page was completed with all needed functionalities. The main section is completed, the footer and others are also completed on the home page." },
+  { name: "Documentation", description: "The home page was completed with all needed functionalities. The main section is completed, the footer and others are also completed on the home page." },
+]

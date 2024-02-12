@@ -31,13 +31,13 @@ type Props = {}
 function page({ }: Props) {
     return (
         <div className="w-full h-auto p-3 flex gap-4 flex-col">
-            <Subheader title={"Board"} />
+            <Subheader title={"Board"} />   
 
-            <div className='w-full p-3 flex items-center justify-between gap-4'>
+            <div className='w-full p-3 grid md:flex grid-cols-2 custom-media  md:items-center md:justify-between gap-4'>
                 {
                     teams.map(team => (
-                        <Card className={`${generateRandomColor()} h-[200px] w-[25%] flex flex-col justify-between`} key={team.name}>
-                            <CardHeader className='flex items-center flex-row gap-5 '>
+                        <Card className={`${generateRandomColor()}  md:h-[250px] h-auto md:w-[25%] sm:grid sm:grid-cols-1 w-auto flex flex-col md:justify-between justify-normal cursor-pointer`} key={team.name}>
+                            <CardHeader className='flex items-center md:flex-row flex-col gap-5 '>
                                 <div className="">
                                     <Avatar.Group>
                                         <Avatar.Counter total={team.members} href="#" />
@@ -57,13 +57,13 @@ function page({ }: Props) {
                     ))
                 }
 
-                <Card className="loadmorebg h-[200px] w-[25%] grid place-content-center cursor-pointer">
+                <Card className="loadmorebg md:h-[250px] h-auto md:w-[25%] w-auto grid place-content-center cursor-pointer">
                     <h1 className='flex items-center gap-4'>Load More <PlusIcon /></h1>
                 </Card>
             </div>
 
             <div>
-              
+
             </div>
         </div>
     )

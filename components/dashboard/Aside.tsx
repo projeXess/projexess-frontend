@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Avatar } from '../ui/avatar'
 import { Button } from '../ui/button'
 import { settingsItems } from '@/utils/constants'
@@ -46,7 +46,7 @@ function Aside({ }: Props) {
                                 </div>
                                 {pathname === item.link &&
                                     (
-                                        <span className=' justify-self-end bg-white rounded-full text-[#3AA1FF]'>
+                                        <span className=' justify-self-end bg-white rounded-full text-[#3AA1FF] p-1'>
                                             <ArrowRight />
                                         </span>
                                     )}
@@ -70,7 +70,7 @@ function Aside({ }: Props) {
                                 </div>
                                 {pathname === item.link &&
                                     (
-                                        <span className=' justify-self-end bg-white rounded-full text-[#3AA1FF]'>
+                                        <span className=' justify-self-end bg-white rounded-full text-[#3AA1FF] p-1'>
                                             <ArrowRight />
                                         </span>
                                     )}
@@ -94,7 +94,7 @@ function Aside({ }: Props) {
                                 </div>
                                 {pathname === item.link &&
                                     (
-                                        <span className=' justify-self-end bg-white rounded-full text-[#3AA1FF]'>
+                                    <span className=' justify-self-end bg-white rounded-full text-[#3AA1FF] p-1'>
                                             <ArrowRight />
                                         </span>
                                     )}
@@ -117,7 +117,11 @@ function Aside({ }: Props) {
                 </div>
 
             </div>
-            <Button className='btn-outlined'>Take Tour</Button>
+            <Button className='btn-outlined'
+                onClick={() => {
+                    console.log('clicked')
+                }}
+            >Take Tour</Button>
 
             <div className="w-full p-4">
                 <Collapse className='w-full' items={asideItems} defaultActiveKey={['1', '2', '3']} />
