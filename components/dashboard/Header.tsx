@@ -27,12 +27,12 @@ function Header({ }: Props) {
                     </Button>
                     <h1 className='lg:text-[1.5rem] text-[0.8rem] font-bold' >ProjeXess</h1>
                 </div>
-                <div className='hidden p-1 items-center gap-7 md:flex'>
+                <div className='hidden p-1 items-center gap-7 sm:flex md:text-[1rem] text-[0.6rem]'>
                     {
                         navLinks.map(link => (
-                            <Link href={link.link} className='flex items-center gap-2 cursor-pointer hover:text-black text-[#5C5C5C]' key={link.name}>
+                            <Link href={link.link} className='flex items-center gap-1 md:gap-2 cursor-pointer hover:text-black text-[#5C5C5C]' key={link.name}>
                                 {link.name}
-                                <ChevronDown />
+                                <ChevronDown className='w-[10px]' />
                             </Link>
                         ))
                     }
