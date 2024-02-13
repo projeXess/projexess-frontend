@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import { Button } from '../ui/button'
 import { ArrowRight } from 'lucide-react'
@@ -14,7 +15,11 @@ function TaskCompleted({ name, description }: Props) {
                 <h1 className='lg:text-[1.4rem] text-[0.9rem] font-bold text-center sm:text-left'>{name}</h1>
                 <p className='text-[0.8rem] text-[#5C5C5C]'> { description}</p>
             </div>
-            <Button className='btn-filled'>
+            <Button className='btn-filled'
+                onClick={() => 
+                    console.log("Hello world")
+                }
+            >
                 Code
                 <ArrowRight className='rotate-[-45deg]' />
             </Button>

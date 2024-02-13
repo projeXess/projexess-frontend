@@ -1,5 +1,4 @@
 export type DefaultType = {
-    isOpen: boolean,
-    setIsOpen: (vl: boolean) => void
-
+    state: boolean,
+    setState: (vl: any) => any;
 }

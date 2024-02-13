@@ -1,7 +1,6 @@
 'use client'
-import ResponsiveAside from '@/components/dashboard/ResponsiveAside'
 import { DefaultType } from '@/types/providerTypes'
-import React, { useState } from 'react'
+import React, { } from 'react'
 
 type Props = {
     children: React.ReactNode
@@ -9,20 +8,22 @@ type Props = {
 
 
 const DefaultValues: DefaultType = {
-    isOpen: false,
-    setIsOpen: () => { }
+    state: false,
+    setState: () => { },
 }
 
 export const AsideContext = React.createContext<DefaultType>(DefaultValues);
 
+
 function AsideProvider({ children }: Props) {
 
-    const [isOpen, setIsOpen] = useState(false);
 
+    const [state, setState] = React.useState(true);
     const values: DefaultType = {
-        isOpen,
-        setIsOpen
+        state,
+        setState,
     }
+
     return (
         <AsideContext.Provider value={values}>
             {children}

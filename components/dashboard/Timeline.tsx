@@ -1,8 +1,5 @@
 'use client'
 import React from 'react'
-import { Input } from '../ui/input'
-import { Antenna, Search, User } from 'lucide-react'
-import { Avatar } from 'flowbite-react'
 import Subheader from './Subheader'
 
 type Props = {}

@@ -170,3 +170,15 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF9999", en
 input, input:focus{
   outline:none !important;
 }
+
+
+*::-webkit-scrollbar{
+  width: 5px !important;
+  height: 5px !important;
+  background: #fff;
+}
+
+*::-webkit-scrollbar-thumb{
+  background-color: #3AA1FF !important;
+  border-radius: 50px;
+}
