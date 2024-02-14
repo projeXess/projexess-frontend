@@ -36,7 +36,7 @@ function Index() {
                 {
                     teams.map(team => (
                         <Card className={`${randomColor}  md:h-[250px] h-auto md:w-[25%] sm:grid sm:grid-cols-1 w-auto flex flex-col md:justify-between justify-normal cursor-pointer`} key={team.name}>
-                            <CardHeader className='flex items-center md:flex-row flex-col gap-5 '>
+                            <CardHeader className='flex items-center md:flex-row flex-col gap-5 text-center md:text-left'>
                                 <div className="">
                                     <Avatar.Group>
                                         <Avatar.Counter total={team.members} href="#" />
@@ -45,7 +45,7 @@ function Index() {
                                 </div>
                                 <h1>{team.name}</h1>
                             </CardHeader>
-                            <CardContent className='text-[0.6rem]'>
+                            <CardContent className='text-[0.6rem] hidden sm:block'>
 
                                 {team.task}
                             </CardContent>

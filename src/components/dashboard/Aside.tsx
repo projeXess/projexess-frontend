@@ -101,7 +101,7 @@ function Aside() {
     return (
         <Transition
             show={state}
-            className={`overflow-auto  bg-white  sm:relative fixed left-0 top-0 h-[100%] sm:shadow-none border-r-2 shadow-md w-[25%] lg:flex hidden `}
+            className={`aside overflow-auto  bg-white  sm:relative fixed left-0 top-0 h-[100%] sm:shadow-none border-r-2 shadow-md w-[30%] lg:flex hidden `}
             as='div'
             enter="transition duration-100 ease-out"
             enterFrom="transform -left-300 opacity-0"
@@ -110,8 +110,8 @@ function Aside() {
             leaveFrom="transform left-0 opacity-100"
             leaveTo="transform -left-300 opacity-0"
         >
-            <div className='w-[100%] lg:flex hidden flex-col items-center gap-3 overflow-y-scroll  h-[100%]'>
-                <div className='flex items-center gap-2 p-4 w-full justify-center'>
+            <div className='w-[100%] flex flex-col items-center gap-3 top-14 relative h-[100%]'>
+                <div className='flex items-center gap-2 p-4 w-full  justify-center'>
                     <Avatar className='bg-gray-200 rounded-none h-[50px] w-[50px]' />
                     <div className='flex flex-col'>
                         <h1 className='font-bold'>Project Name</h1>
@@ -130,10 +130,10 @@ function Aside() {
 
                 </div>
 
-                <div className='w-full border-t-2 p-10 flex flex-col gap-4 items-left justify-start'>
+                <div className='w-full border-t-2 sm:p-10 p-5 flex flex-col gap-4 items-left justify-start'>
                     {
                         settingsItems.map(item => (
-                            <NavLink to={item.link} className='flex text-left  justify-start  text-[#5C5C5C] gap-4 ' key={item.name} >
+                            <NavLink to={item.link} className='flex text-left  justify-start  text-[#5C5C5C] gap-4  sm:text-[1rem] text-[0.8rem]' key={item.name} >
                                 {item.icon}
                                 {item.name}
                             </NavLink>
