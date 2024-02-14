@@ -1,24 +1,25 @@
 import { Avatar } from 'flowbite-react'
-import { Input } from '../ui/input'
 import { Search } from 'lucide-react'
 
 type Props = {
-    title: string
+    title: string,
+    description: string
 }
 
-function Subheader({ title }: Props) {
+function Subheader({ title, description }: Props) {
     return (
         <div className='w-full p-4 flex flex-col gap-7'>
             <div>
 
                 <h1 className="text-gray-400 text-[0.9rem]">Project / Project Name</h1>
             </div>
-            <div>
+            <div className='flex flex-col gap-5'>
 
                 <h1 className='font-bold'>{title}</h1>
+                <p className="text-[#949494] text-[0.9rem]">{description}</p>
             </div>
             <div className='flex items-center gap-3'>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 justify-between w-full">
                     <Avatar.Group>
                         <Avatar placeholderInitials='T' rounded stacked />
                         <Avatar rounded placeholderInitials='D' stacked />
@@ -27,11 +28,15 @@ function Subheader({ title }: Props) {
                     </Avatar.Group>
 
                 </div>
-                <div className='flex items-center p-1 w-[300px] justify-around border-2 rounded-xl bg-white pr-3'>
-                    <Input placeholder='search' className=' border-none w-full p-0 focus:outline-none' />
-                    <Search />
+                <div className='flex items-center justify-between border-none w-auto  bg-white rounded-full '>
+                    <input className='p-4 rounded-full z-10 rounded-r-full ' placeholder='Search ...' />
+                    <span className='flex p-4 text-white font-bold items-center gap-2 bg-[#3AA1FF] rounded-r-full cursor-pointer'>
+                        <Search />
+                        Search
+                    </span>
                 </div>
             </div>
+
         </div>
     )
 }

@@ -1,21 +1,20 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-empty-pattern */
-import Aside from '@/components/dashboard/Aside'
-import Header from '@/components/dashboard/Header'
+
+import { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
+
 
 type Props = object
 
-function Index({}: Props) {
-  return (
-    <section>
-      <Header />
-      <div className='w-full flex items-start  justify-normal h-full '>
-        <Aside />
-        <div className='lg:w-[80%] w-full bg-[rgb(234,245,255)] h-auto'>
-          <h1>Dashboard</h1>
-        </div>
-      </div>
-    </section>
-  )
+function Index({ }: Props) {
+
+
+  const navigate = useNavigate()
+  useEffect(() => {
+    navigate('/dashboard/timeline', { replace: true })
+  }, [])
+  return null
 }
 
 export default Index

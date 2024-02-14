@@ -7,6 +7,7 @@ import { Avatar } from 'flowbite-react'
 import { PlusIcon } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import BarChart from '@/components/graphs/BarChart'
+import Calendar from '@/components/ui/Calendar'
 
 
 
@@ -30,13 +31,13 @@ function Index() {
 
 
         <div className="w-full h-auto p-3 flex gap-4 flex-col">
-            <Subheader title={"Board"} />
+            <Subheader title={"Board"} description='Manage and control the team’s progress by catetory' />
 
             <div className='w-full p-3 grid md:flex grid-cols-2 custom-media  md:items-center md:justify-between gap-4'>
                 {
                     teams.map(team => (
                         <Card className={`${randomColor}  md:h-[250px] h-auto md:w-[25%] sm:grid sm:grid-cols-1 w-auto flex flex-col md:justify-between justify-normal cursor-pointer`} key={team.name}>
-                            <CardHeader className='flex items-center md:flex-row flex-col gap-5 '>
+                            <CardHeader className='flex items-center md:flex-row flex-col gap-5 text-center md:text-left'>
                                 <div className="">
                                     <Avatar.Group>
                                         <Avatar.Counter total={team.members} href="#" />
@@ -45,7 +46,7 @@ function Index() {
                                 </div>
                                 <h1>{team.name}</h1>
                             </CardHeader>
-                            <CardContent className='text-[0.6rem]'>
+                            <CardContent className='text-[0.6rem] hidden sm:block'>
 
                                 {team.task}
                             </CardContent>
@@ -61,12 +62,12 @@ function Index() {
                 </Card>
             </div>
 
-            <div className="w-full flex">
-                <div className='w-[70%]'>
+            <div className="w-full flex gap-3">
+                <div className='w-[65%] bg-white p-3 rounded-xl shadow-sm'>
                     <BarChart />
                 </div>
-                <div className="w-[30%]">
-                    {/* <Calendar/> */}
+                <div className="w-[35%] bg-white p-3 rounded-xl shadow-sm">
+                    <Calendar/>
                 </div>
             </div>
         </div>

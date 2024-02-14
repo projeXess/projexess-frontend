@@ -4,6 +4,7 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import DashboardLayout from './components/layout/DashboardLayout';
+import NotFound from './pages/(dashboard)/dashboard/404';
 
 
 ChartJS.register(ArcElement, Tooltip, Legend);
@@ -43,6 +44,10 @@ const router = createBrowserRouter(
       path: '/dashboard',
       element: <DashboardLayout><Dashboard /> </DashboardLayout>
     },
+    {
+      path: "/dashboard/*",
+      element: <DashboardLayout><NotFound /></DashboardLayout>
+    }
   ]
 )
 

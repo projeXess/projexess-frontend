@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import { useContext } from 'react'
 import { Button } from '../ui/button'
 import { Input } from '../ui/input'
-import { BellIcon, ChevronDown, InboxIcon, MenuIcon, Search } from 'lucide-react'
+import { BellIcon, ChevronDown, InboxIcon, MenuIcon, Search, CopyXIcon } from 'lucide-react'
 import { Avatar } from '../ui/avatar'
 import { AsideContext } from '@/providers/Dashboard/AsideProvider'
 
@@ -17,11 +17,13 @@ function Header() {
                 <div className='flex items-center gap-2'>
                     <Button className='bg-white hover:bg-white'
                         onClick={() => {
-                            setState(state)
-                            console.log(state)
+                            setState(!state)
                         }}
                     >
-                        <MenuIcon className='bg-white text-black' />
+                      
+                        {
+                            state ? <CopyXIcon className='bg-white text-black' /> : (<MenuIcon className='bg-white text-black' />)
+                        }
                     </Button>
                     <h1 className='lg:text-[1.5rem] text-[0.8rem] font-bold' >ProjeXess</h1>
                 </div>
