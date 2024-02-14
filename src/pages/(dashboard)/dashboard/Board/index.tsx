@@ -61,11 +61,11 @@ function Index() {
                 </Card>
             </div>
 
-            <div className="w-full flex">
-                <div className='w-[70%]'>
+            <div className="w-full flex gap-3">
+                <div className='w-[70%] bg-white p-3 rounded-xl shadow-sm'>
                     <BarChart />
                 </div>
-                <div className="w-[30%]">
+                <div className="w-[30%] bg-white p-3 rounded-xl shadow-sm">
                     {/* <Calendar/> */}
                 </div>
             </div>

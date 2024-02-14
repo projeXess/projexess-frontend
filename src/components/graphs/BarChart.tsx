@@ -26,9 +26,13 @@ const BarChart: React.FC = () => {
                             '#9578FD',
                             '#4EE4CC',
                             '#A2A3FF',
-                        ]
-                    }]
-                }
+                        ],
+                        barThickness: 50,
+                        borderRadius: 10,
+
+                    }],
+                },
+
             });
 
         }
