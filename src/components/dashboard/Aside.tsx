@@ -39,7 +39,7 @@ function Aside() {
                 <>
                     {
                         planningItems.map(item => (
-                            <NavLink to={item.link} className={({ isActive }) => `${isActive && 'bg-[#3AA1FF] text-white font-bold'}`} key={item.name}>
+                            <NavLink to={item.link} className={({ isActive }) => `${isActive && 'bg-[#3AA1FF] text-white font-bold btn-filled '} `} key={item.name}>
                                 <div className='flex items-center gap-2'>
                                     {item.icon}
                                     {item.name}
@@ -60,7 +60,7 @@ function Aside() {
                 <>
                     {
                         devItems.map(item => (
-                            <NavLink to={item.link} className={({ isActive }) => isActive ? 'bg-[#3AA1FF] text-white font-bold' : ''} key={item.name}>
+                            <NavLink to={item.link} className={({ isActive }) => isActive ? 'bg-[#3AA1FF] text-white font-bold btn-filled ' : ''} key={item.name}>
                                 <div className='flex items-center gap-2'>
                                     {item.icon}
                                     {item.name}
@@ -81,7 +81,7 @@ function Aside() {
                 <>
                     {
                         assItems.map(item => (
-                            <NavLink to={item.link} className={({ isActive }) => `${isActive && 'bg-[#3AA1FF] text-white font-bold'}`} key={item.name}>
+                            <NavLink to={item.link} className={({ isActive }) => `${isActive && 'bg-[#3AA1FF] text-white font-bold btn-filled '}`} key={item.name}>
                                 <div className='flex items-center gap-2'>
                                     {item.icon}
                                     {item.name}

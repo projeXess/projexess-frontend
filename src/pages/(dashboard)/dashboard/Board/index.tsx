@@ -30,7 +30,7 @@ function Index() {
 
 
         <div className="w-full h-auto p-3 flex gap-4 flex-col">
-            <Subheader title={"Board"} />
+            <Subheader title={"Board"} description='Manage and control the team’s progress by catetory' />
 
             <div className='w-full p-3 grid md:flex grid-cols-2 custom-media  md:items-center md:justify-between gap-4'>
                 {

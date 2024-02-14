@@ -31,3 +31,31 @@ export const tasksCompleted = [
   { name: "Homepage", description: "The home page was completed with all needed functionalities. The main section is completed, the footer and others are also completed on the home page." },
   { name: "Documentation", description: "The home page was completed with all needed functionalities. The main section is completed, the footer and others are also completed on the home page." },
 ]
+
+
+export const insights = [
+  {
+    title: "JSON is incredibly slow: Here’s What’s Faster!",
+    description: "Yes, you heard that right! JSON, the ubiquitous format for data interchange in web development, might...",
+    avatar: ''
+  },
+
+  {
+
+    title: 'Stop Using localStorage!',
+    description: "The title is not clickbait, the message is abrupt “Stop Using localStorage!” there is no ambiguity here and....",
+    avatar: ''
+  },
+  {
+    title: 'I Built an App in 6 Hours that Makes $1,500/Mo',
+    description: "Copy my strategy! — Here is the simple web app I created in 6 hours. It is a Finnish rental cottage finder that ....",
+    avatar: ''
+  },
+
+  {
+    title: '18 JavaScript One-Liners That’ll Make You Look Like a Pro',
+    description: "A list of one-liners you should know to up your knowledge of JavaScript. — In just a few minutes, step .........",
+    avatar: ''
+  }
+
+]
