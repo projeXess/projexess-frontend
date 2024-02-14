@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react'
 
 type Props = {
     name: string,
-    description: string
+    description:string
 }
 
 function TaskCompleted({ name, description }: Props) {

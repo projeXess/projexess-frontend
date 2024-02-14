@@ -1,4 +1,3 @@
-'use client'
 import Subheader from './Subheader'
 
 
