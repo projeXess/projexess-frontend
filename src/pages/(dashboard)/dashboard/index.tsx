@@ -1,7 +1,6 @@
 /* eslint-disable no-empty-pattern */
 import Aside from '@/components/dashboard/Aside'
 import Header from '@/components/dashboard/Header'
-import React from 'react'
 
 type Props = object
 

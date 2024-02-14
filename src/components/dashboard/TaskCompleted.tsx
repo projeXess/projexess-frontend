@@ -1,11 +1,10 @@
 'use client'
-import React from 'react'
 import { Button } from '../ui/button'
 import { ArrowRight } from 'lucide-react'
 
 type Props = {
-    name: String,
-    description: String
+    name: string,
+    description: string
 }
 
 function TaskCompleted({ name, description }: Props) {
