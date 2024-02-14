@@ -1,7 +1,6 @@
 import Subheader from '@/components/dashboard/Subheader'
 import TaskCompleted from '@/components/dashboard/TaskCompleted'
 import { tasksCompleted } from '@/utils/constants'
-import React from 'react'
 
 
 function Index() {

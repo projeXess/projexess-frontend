@@ -1,5 +1,4 @@
-import { BotIcon, CircuitBoard, File, FileStack, Settings, TagsIcon } from "lucide-react";
-import Link from "next/link";
+import { File, FileStack, Settings } from "lucide-react";
 
 export const navLinks = [
   { name: "Your tasks", link: "" },
