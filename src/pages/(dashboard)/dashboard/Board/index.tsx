@@ -5,7 +5,7 @@ import { Progress } from '@/components/ui/progress'
 import { teams } from '@/utils/constants'
 import { Avatar } from 'flowbite-react'
 import { PlusIcon } from 'lucide-react'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import BarChart from '@/components/graphs/BarChart'
 
 

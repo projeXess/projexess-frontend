@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 'use client'
-import React, { useContext } from 'react'
+import  { useContext } from 'react'
 import { Avatar } from '../ui/avatar'
 import { Button } from '../ui/button'
 import { settingsItems } from '@/utils/constants'
@@ -27,7 +27,7 @@ export const assItems = [
 
 
 function Aside() {
-    const { setState, state } = useContext(AsideContext)
+    const {  state } = useContext(AsideContext)
 
 
     const asideItems: CollapseProps['items'] = [

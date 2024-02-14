@@ -1,5 +1,4 @@
 import { Avatar } from 'flowbite-react'
-import React from 'react'
 import { Input } from '../ui/input'
 import { Search } from 'lucide-react'
 

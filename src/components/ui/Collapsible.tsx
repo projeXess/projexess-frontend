@@ -1,15 +1,6 @@
-import React from 'react'
 
-type Props = {
-    title: String,
-    value: {
-        name: String,
-        link: String,
-        icon: any
-    }[]
-}
 
-function Collapsible({ }: Props) {
+function Collapsible() {
     return null
 }
 
