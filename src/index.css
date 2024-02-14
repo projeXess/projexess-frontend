@@ -268,5 +268,21 @@ a.text-white .active-icon{
 }
 
 
+.MuiPickersDay-root{
+  color: #3AA1FF !important;
+}
 
+.MuiPickersDay-root[aria-selected="true"]{
+  color: #3AA1FF !important;
+  background: none !important;
+  border: 1px solid #3AA1FF;
+}
 
+.highlighted .MuiPickersDay-root {
+  color:white !important;
+  border-radius: 0px;
+}
+
+.MuiPickersCalendarHeader-root *, .MuiDayCalendar-header * {
+  color: #3AA1FF !important;
+}
