@@ -18,8 +18,8 @@ function Subheader({ title, description }: Props) {
                 <h1 className='font-bold'>{title}</h1>
                 <p className="text-[#949494] text-[0.9rem]">{description}</p>
             </div>
-            <div className='flex items-center gap-3'>
-                <div className="flex flex-wrap gap-2 justify-between w-full">
+            <div className='flex sm:flex-row flex-col items-center gap-3'>
+                <div className="sm:flex flex-wrap gap-2 justify-between w-full hidden">
                     <Avatar.Group>
                         <Avatar placeholderInitials='T' rounded stacked />
                         <Avatar rounded placeholderInitials='D' stacked />
@@ -29,10 +29,10 @@ function Subheader({ title, description }: Props) {
 
                 </div>
                 <div className='flex items-center justify-between border-none w-auto  bg-white rounded-full '>
-                    <input className='p-4 rounded-full z-10 rounded-r-full ' placeholder='Search ...' />
-                    <span className='flex p-4 text-white font-bold items-center gap-2 bg-[#3AA1FF] rounded-r-full cursor-pointer'>
+                    <input className='p-3 rounded-full z-10 sm:w-[70%] w-[50%] rounded-r-full ' placeholder={`Search ${title} ...`} />
+                    <span className='flex p-3 text-white font-bold items-center gap-2 bg-[#3AA1FF] rounded-r-full cursor-pointer'>
                         <Search />
-                        Search
+                        <span className='sm:block hidden'>Search</span>
                     </span>
                 </div>
             </div>
