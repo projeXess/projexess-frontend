@@ -81,10 +81,6 @@
   color: white !important;
 }
 
-.ant-collapse-header{
-  @apply w-full flex items-center gap-3 p-10 text-[#5C5C5C]
-} 
-
 .ant-collapse, .ant-collapse-item,.ant-collapse-header,.ant-collapse-content{
   border: none !important;
 }
@@ -96,11 +92,24 @@
   gap: 3px;
   padding: 10px;
   color: #5C5C5C !important;
+  font-size: 1.02rem;
   background: white;
 }
 
 .ant-collapse-content-box{
   @apply  flex pl-10 justify-start p-2 text-[#5C5C5C] flex-col gap-5
+}
+
+.ant-collapse-content-box{
+  display: flex !important;
+  padding-left: 2.5rem !important;
+  justify-content: start !important;
+  padding: 0.5rem !important;
+  color: #5C5C5C !important;
+  flex-direction: column !important;
+  gap: 1.25rem !important;
+  margin-left: 20px;
+  font-size: 1.005rem;
 }
 
 .ant-collapse-content-box a {

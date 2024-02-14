@@ -130,10 +130,10 @@ function Aside() {
 
                 </div>
 
-                <div className='w-full border-t-2 p-4 flex flex-col gap-4'>
+                <div className='w-full border-t-2 p-10 flex flex-col gap-4 items-left justify-start'>
                     {
                         settingsItems.map(item => (
-                            <NavLink to={item.link} className='flex item-center  text-[#5C5C5C]' key={item.name} >
+                            <NavLink to={item.link} className='flex text-left  justify-start  text-[#5C5C5C] gap-4 ' key={item.name} >
                                 {item.icon}
                                 {item.name}
                             </NavLink>
