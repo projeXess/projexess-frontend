@@ -1,7 +1,7 @@
 import React, { lazy } from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createHashRouter, RouterProvider } from 'react-router-dom'
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import DashboardLayout from './components/layout/DashboardLayout';
 import NotFound from './components/dashboard/404';
