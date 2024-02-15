@@ -1,6 +1,7 @@
 import Insight from "@/components/dashboard/Insight"
 import Subheader from "@/components/dashboard/Subheader"
 import LineChart from "@/components/graphs/LineChart"
+import PieChart from "@/components/graphs/PieChart"
 import Calendar from "@/components/ui/Calendar"
 import { insights } from "@/utils/constants"
 
@@ -15,8 +16,9 @@ function Bot() {
           <h1 className="text-[#414D55] text-[1.01rem] font-bold pl-5 mb-5">Market influencing factors</h1>
           <LineChart />
         </div>
-        <div className="w-[44%] lg:block hidden bg-white p-3  rounded-xl shadow-lg h-full">
+        <div className="w-[44%] lg:block hidden bg-white p-3 h-auto rounded-xl shadow-lg h-full">
           <h1 className="text-[#414D55] text-[1.01rem] font-bold pl-5">Market consumption</h1>
+          <PieChart />
         </div>
       </div>
 

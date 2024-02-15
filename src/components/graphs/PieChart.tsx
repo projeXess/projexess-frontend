@@ -6,28 +6,12 @@ import Chart from 'chart.js/auto';
 const PieChart = () => {
 
     const chartRef = useRef<HTMLCanvasElement>(null);
-    let myChart: Chart | null | any = null;
+    let myChart: Chart | null = null;
 
 
 
     const data = {
-        datasets: [
-            {
-                label: 'Worst Case',
-                data: 75,
-                backgroundColor: '#56FF47',
-            },
-            {
-                label: "Moderate",
-                data: 4,
-                backgroundColor: '#8378FF',
-            },
-            {
-                label: "Best Case",
-                data: 24,
-                backgroundColor: "#FF9999"
-            }
-        ]
+
     };
 
 
@@ -40,12 +24,29 @@ const PieChart = () => {
 
             myChart = new Chart(chartRef.current, {
                 type: 'pie',
-                data: data,
+                data: {
+                    datasets: [
+                        {
+                            label: 'Worst Case',
+                            data: 75,
+                            backgroundColor: '#56FF47',
+                        },
+                        {
+                            label: "Moderate",
+                            data: 4,
+                            backgroundColor: '#8378FF',
+                        },
+                        {
+                            label: "Best Case",
+                            data: 24,
+                            backgroundColor: "#FF9999"
+                        }
+                    ]
+                },
                 options: {
-                    responsive: true,
                     plugins: {
                         legend: {
-                            position: 'left',
+                            position: 'right',
                         },
 
                     }
