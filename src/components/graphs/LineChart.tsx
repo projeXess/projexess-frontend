@@ -51,13 +51,29 @@ const LineChart = () => {
                         duration: 2000,
                         easing: 'easeInBounce',
                     },
-                    interaction: {
-                        intersect: false
-                    },
+                    spanGaps: false,
                     responsive: true,
+                    showLine: true,
+                    scales: {
+                        x: {
+                            grid: {
+                                display: false
+                            }
+                        },
+                        y: {
+                            min:0,
+                            grid: {
+                                display: false
+                            }
+                        }
+                    },
+                    
                     plugins: {
                         legend: {
                             position: 'bottom',
+                            align: 'center',
+                            fullSize: true,
+                            maxHeight: 25
 
                         }
                     }

@@ -33,6 +33,10 @@ const BarChart: React.FC = () => {
                     }],
                 },
 
+                options: {
+                    responsive: true
+                }
+
             });
 
         }

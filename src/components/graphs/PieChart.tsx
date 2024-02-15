@@ -1,18 +1,12 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useRef } from 'react'
-import Chart from 'chart.js/auto';
+import Chart, {  } from 'chart.js/auto';
 
 const PieChart = () => {
 
     const chartRef = useRef<HTMLCanvasElement>(null);
-    let myChart: Chart | null = null;
-
-
-
-    const data = {
-
-    };
+    let myChart: any | null = null;
 
 
     useEffect(() => {
