@@ -1,7 +1,7 @@
 import React, { lazy } from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createHashRouter, RouterProvider } from 'react-router-dom'
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import DashboardLayout from './components/layout/DashboardLayout';
 import NotFound from './components/dashboard/404';
@@ -18,7 +18,7 @@ const Board = lazy(() => import('@/pages/(dashboard)/dashboard/Board'))
 const Bot = lazy(() => import('@/pages/(dashboard)/dashboard/bot'))
 const Dashboard = lazy(() => import('@/pages/(dashboard)/dashboard'))
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   [
     {
       path: '/dashboard/timeline',
