@@ -63,10 +63,10 @@ function Index() {
             </div>
 
             <div className="w-full flex gap-3 justify-around">
-                <div className='w-[65%] bg-white p-3 rounded-xl shadow-sm'>
+                <div className='md:w-[75%] w-[100%] sm:w-[75%] bg-white p-3 rounded-xl shadow-sm'>
                     <BarChart />
                 </div>
-                <div className="w-[30%] bg-white p-3 rounded-xl shadow-sm">
+                <div className="w-[30%] lg:block hidden bg-white p-3 rounded-xl shadow-sm">
                     <Calendar />
                 </div>
             </div>
