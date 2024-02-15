@@ -4,6 +4,7 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import DashboardLayout from './components/layout/DashboardLayout';
+import NotFound from './components/dashboard/404';
 
 
 ChartJS.register(ArcElement, Tooltip, Legend);
@@ -43,13 +44,17 @@ const router = createBrowserRouter(
       path: '/dashboard',
       element: <DashboardLayout><Dashboard /> </DashboardLayout>
     },
+    {
+      path: "/dashboard/*",
+      element: <DashboardLayout><NotFound /></DashboardLayout>
+    }
   ]
 )
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <Suspense>
+    {/* <Suspense> */}
       <RouterProvider router={router} />
-    </Suspense>
+    {/* </Suspense> */}
   </React.StrictMode>,
 )
