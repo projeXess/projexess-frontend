@@ -9,6 +9,12 @@ function Bot() {
     <>
       <Subheader title="AI Bot" description="View all you project progress using the timeline presentation provided" />
 
+      <div className="">
+        <div></div>
+        <div></div>
+      </div>
+
+
       <div className="bot-page w-full p-2 flex md:flex-row flex-col-reverse items-center justify-around gap-5">
         <div className="md:w-[75%] w-[100%] sm:w-[75%]  h-[400px] bg-white p-6 flex flex-col items-start justify-start rounded-xl shadow-lg overflow-auto  ">
           <h1 className="text-[#414D55] text-[1.01rem] font-bold pl-5">Daily market insights information gathered by AI</h1>
