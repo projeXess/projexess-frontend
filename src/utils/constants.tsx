@@ -1,4 +1,4 @@
-import { File, FileStack, Settings } from "lucide-react";
+import { FacebookIcon, File, FileStack, InstagramIcon, LinkedinIcon, Settings, TwitterIcon } from "lucide-react";
 
 export const navLinks = [
   { name: "Your tasks", link: "" },
@@ -58,4 +58,46 @@ export const insights = [
     avatar: '/avatar4.svg'
   }
 
+]
+
+
+export const explorerListItems = [
+  { name: 'statistics', link: '' },
+  { name: 'analysis', link: '' },
+  { name: 'manage your work', link: '' },
+  { name: "control your workers", link: '' },
+  { name: 'track time', link: '' },
+  { name: 'set up tasks', link: '' },
+  { name: 'notifications', link: '' },
+  { name: 'use AI', link: '' },
+  { name: 'graphs', link: '' },
+  { name: 'Calendar', link: '' },
+]
+export const useCasesItems = [
+  { name: 'User registration', link: '' },
+  { name: 'Mentor matching', link: '' },
+  { name: 'Project guidance', link: '' },
+  { name: 'Market insights access', link: '' },
+  { name: 'Community interaction', link: '' },
+  { name: 'Subscription Management', link: '' },
+  { name: 'Data security management', link: '' },
+  { name: 'Resource libary access', link: '' },
+  { name: 'Feedback and support request', link: '' },
+  { name: 'Admin controls', link: '' },
+  { name: 'Mobile usage', link: '' },
+  { name: 'scalability handling', link: '' },
+]
+export const valuePropoItems = [
+  { name: 'End-to-End project guidance', link: '' },
+  { name: 'Expert guidance', link: '' },
+  { name: 'Customized solutions', link: '' },
+  { name: 'Time and cost efficiency', link: '' },
+]
+
+
+export const socials = [
+  { name: 'Twitter', icon: <TwitterIcon  />, link:'' },
+  { name: 'Instagram', icon: <InstagramIcon /> ,link: '' },
+  { name: 'Facebook', icon: <FacebookIcon />, link: '' },
+  { name: 'Linkedin', icon: <LinkedinIcon />, link: '' },
 ]

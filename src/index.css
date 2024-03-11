@@ -176,7 +176,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF9999", en
 
 
 .btn-filled{
- @apply flex items-center gap-2 bg-[#3AA1FF] text-white  hover:bg-white hover:text-[#3AA1FF] border-2
+ @apply flex items-center justify-center gap-2 bg-[#3AA1FF] text-white  hover:bg-white hover:text-[#3AA1FF] border-2
 }
 
 .btn-filled:hover{

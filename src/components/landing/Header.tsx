@@ -8,7 +8,7 @@ const navItems = [
 
 function LandingHeader() {
     return (
-        <div className="flex p-2 justify-around">
+        <div className="w-full flex p-2 justify-around shadow-lg top-0 sticky z-50 bg-white">
             <div>
                 <h1 className="font-bold text-[#3AA1FF] text-[1.6rem]">ProjeXess</h1>
             </div>
