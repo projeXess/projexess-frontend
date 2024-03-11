@@ -72,7 +72,7 @@
  
 
 .btn-outlined {
-  @apply bg-white rounded-full border-2 border-[#3AA1FF] text-[#3AA1FF] hover:bg-[#3AA1FF] hover:text-white
+  @apply bg-white  border-2 border-[#3AA1FF] text-[#3AA1FF] hover:bg-[#3AA1FF] hover:text-white
 }
 
 
@@ -176,7 +176,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF9999", en
 
 
 .btn-filled{
- @apply flex items-center gap-2 bg-[#3AA1FF] text-white rounded-full hover:bg-white hover:text-[#3AA1FF] border-2
+ @apply flex items-center gap-2 bg-[#3AA1FF] text-white  hover:bg-white hover:text-[#3AA1FF] border-2
 }
 
 .btn-filled:hover{
