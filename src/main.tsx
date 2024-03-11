@@ -5,6 +5,7 @@ import { createHashRouter, RouterProvider } from 'react-router-dom'
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import DashboardLayout from './components/layout/DashboardLayout';
 import NotFound from './components/dashboard/404';
+import LandingLayout from './components/layout/LandingLayout';
 
 
 ChartJS.register(ArcElement, Tooltip, Legend);
@@ -17,6 +18,7 @@ const Code = lazy(() => import('@/pages/(dashboard)/dashboard/Code'))
 const Board = lazy(() => import('@/pages/(dashboard)/dashboard/Board'))
 const Bot = lazy(() => import('@/pages/(dashboard)/dashboard/bot'))
 const Dashboard = lazy(() => import('@/pages/(dashboard)/dashboard'))
+const Index = lazy(() => import('@/pages/(root)'))
 
 const router = createHashRouter(
   [
@@ -47,6 +49,10 @@ const router = createHashRouter(
     {
       path: "/dashboard/*",
       element: <DashboardLayout><NotFound /></DashboardLayout>
+    },
+    {
+      path: "/",
+      element: <LandingLayout><Index /></LandingLayout>
     }
   ]
 )
@@ -54,7 +60,7 @@ const router = createHashRouter(
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     {/* <Suspense> */}
-      <RouterProvider router={router} />
+    <RouterProvider router={router} />
     {/* </Suspense> */}
   </React.StrictMode>,
 )
