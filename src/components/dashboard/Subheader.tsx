@@ -13,28 +13,36 @@ function Subheader({ title, description }: Props) {
 
                 <h1 className="text-gray-400 sm:text-[0.9rem] text-[0.6rem] ">Project / Project Name</h1>
             </div>
-            <div className='flex flex-col gap-5 sm:text-left text-center'>
+            <div className='flex items-center justify-between'>
 
-                <h1 className='font-bold'>{title}</h1>
-                <p className="text-[#949494] text-[0.9rem]">{description}</p>
-            </div>
-            <div className='flex sm:flex-row flex-col items-center gap-3'>
-                <div className="sm:flex flex-wrap gap-2 justify-between w-full hidden">
-                    <Avatar.Group>
-                        <Avatar placeholderInitials='T' rounded stacked />
-                        <Avatar rounded placeholderInitials='D' stacked />
-                        <Avatar rounded placeholderInitials="L" stacked />
-                        <Avatar.Counter total={5} href="#" />
-                    </Avatar.Group>
+                <div className='flex  gap-5 sm:text-left text-center flex-col items-center'>
+                    <h1 className='font-bold text-[1.2rem] text-[#414D55]'>{title}</h1>
+                    <p className="text-[#949494] text-[0.9rem]">{description}</p>
 
                 </div>
-                <div className='flex items-center justify-between border-none w-auto  bg-white rounded-full '>
+                <div className='flex items-center justify-between border-none w-auto  bg-white rounded-full'>
                     <input className='p-3 rounded-full z-10  rounded-r-full ' placeholder={`Search ${title} ...`} />
                     <span className='flex p-3 text-white font-bold items-center gap-2 bg-[#3AA1FF] rounded-r-full cursor-pointer'>
                         <Search />
                         <span className='sm:block hidden'>Search</span>
                     </span>
                 </div>
+            </div>
+            <div className='flex sm:flex-row flex-col items-center gap-3 w-full'>
+                <div className="sm:flex flex-wrap gap-2 justify-between w-full hidden">
+                    {
+                        title === "Team" ? null : (
+                            <Avatar.Group>
+                                <Avatar placeholderInitials='T' rounded stacked />
+                                <Avatar rounded placeholderInitials='D' stacked />
+                                <Avatar rounded placeholderInitials="L" stacked />
+                                <Avatar.Counter total={5} href="#" />
+                            </Avatar.Group>
+                        )
+                    }
+
+                </div>
+
             </div>
 
         </div>
