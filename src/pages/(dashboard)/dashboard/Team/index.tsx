@@ -181,7 +181,7 @@ function index() {
                 </button>
             </div>
 
-            <div className="w-full p-3 grid md:grid-cols-4 gap-5 grid-cols-2 sm:grid-cols-3">
+            <div className="w-full p-3 grid md:grid-cols-4 gap-5 grid-cols-1 sm:grid-cols-3">
                 {
                     members.map((member) => {
                         return (

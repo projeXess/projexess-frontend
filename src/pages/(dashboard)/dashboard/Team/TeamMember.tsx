@@ -12,7 +12,7 @@ function TeamMember() {
                 <div>
                     <h1 className="text-gray-400 sm:text-[0.9rem] text-[0.6rem] ">Project / Project Name</h1>
                 </div>
-                <div className='flex items-center justify-between'>
+                <div className='flex items-center justify-between flex-col md:flex-row gap-4'>
 
                     <div className='flex  gap-5 sm:text-left text-center flex-col items-center'>
                         <h1 className='font-bold text-[1.2rem] text-[#414D55]'>{name}</h1>
@@ -28,8 +28,8 @@ function TeamMember() {
                 </div>
             </div>
 
-            <div className="w-full p-3 flex items-start justify-center gap-5">
-                <div className="p-4 bg-white w-[35%] rounded-md flex flex-col items-center gap-3">
+            <div className="w-full p-3 flex items-start justify-center gap-5 flex-col sm:flex-row">
+                <div className="p-4 bg-white md:w-[35%] rounded-md flex flex-col items-center gap-3 sm:w-1/2 w-full">
                     <Avatar
                         size={"large"}
                         src="https://media.istockphoto.com/id/1291318636/photo/put-more-in-get-more-out.jpg?s=612x612&w=0&k=20&c=KRvn1x6r9x9GmYMLpW6AVZzkvOA0bmn14fKle-O6CVc="
@@ -47,7 +47,7 @@ function TeamMember() {
                     <p className="text-[#191919] font-bold text-[0.8rem] uppercase">Member Since: December 3, 2018</p>
                     <button className="text-[#969696]">Report</button>
                 </div>
-                <div className="p-4 bg-white w-[35%] rounded-md flex flex-col gap-10">
+                <div className="p-4 bg-white md:w-[35%] rounded-md flex flex-col gap-10 sm:w-1/2 w-full">
 
                     <div className="w-[100%] p-2 border-slate-300 border-2 rounded-lg flex items-center justify-around">
                         <div className="text-[0.8rem] flex flex-col gap-2">
