@@ -1,7 +1,6 @@
 import Subheader from "@/components/dashboard/Subheader"
 import { InstagramIcon, LinkedinIcon, Plus, TwitterIcon } from "lucide-react"
 import { Card } from "antd";
-import Meta from "antd/es/card/Meta";
 import { Link } from "react-router-dom";
 
 
