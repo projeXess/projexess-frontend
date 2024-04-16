@@ -12,10 +12,10 @@ function Subheader({ title, description }: Props) {
             <div>
                 <h1 className="text-gray-400 sm:text-[0.9rem] text-[0.6rem] ">Project / Project Name</h1>
             </div>
-            <div className='flex items-center justify-between'>
+            <div className='flex items-center justify-between flex-col md:flex-row gap-4'>
 
-                <div className='flex  gap-5 sm:text-left text-center flex-col items-center'>
-                    <h1 className='font-bold text-[1.2rem] text-[#414D55]'>{title}</h1>
+                <div className='flex  gap-5 flex-col '>
+                    <h1 className='font-bold text-[1.2rem] text-[#414D55] text-left'>{title}</h1>
                     <p className="text-[#949494] text-[0.9rem]">{description}</p>
 
                 </div>

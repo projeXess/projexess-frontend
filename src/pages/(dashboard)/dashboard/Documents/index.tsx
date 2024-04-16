@@ -57,7 +57,7 @@ const columns = [
         key: 'header',
         render: () => {
             return (
-                <div className="w-full flex items-center justify-between">
+                <div className="w-full flex items-center justify-between ">
                     <button className="btn-outlined p-2 rounded-sm">Open</button>
                     <button>
                         <MoreVertical />
@@ -242,6 +242,7 @@ function index() {
 
             <div className="w-full">
                 <Table
+                    className="w-full overflow-auto"
                     dataSource={dataSource}
                     columns={columns}
                     rowSelection={{ type: 'checkbox' }}
