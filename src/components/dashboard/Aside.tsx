@@ -154,9 +154,19 @@ function Aside() {
                 <div className='w-full border-t-2 sm:p-10 p-5 flex flex-col gap-4 items-left justify-start'>
                     {
                         settingsItems.map(item => (
-                            <NavLink to={item.link} className='flex text-left  justify-start  text-[#5C5C5C] gap-4  sm:text-[1rem] text-[0.8rem]' key={item.name} >
-                                {item.icon}
-                                {item.name}
+                            <NavLink
+                                onClick={() => {
+                                    state && screenWidth <= 1024 && setState(!state)
+                                }}
+                                to={item.link}
+                                className={({ isActive }) => `${isActive && 'bg-[#3AA1FF] text-white font-bold btn-filled '} rounded-full`} key={item.name}>
+                                <div className='flex items-center gap-1 p-3 '>
+                                    {item.icon}
+                                    {item.name}
+                                </div>
+                                <span className='active-icon justify-self-end bg-white rounded-full text-[#3AA1FF] p-1'>
+                                    <ArrowRight />
+                                </span>
                             </NavLink>
                         ))
                     }

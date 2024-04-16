@@ -117,7 +117,7 @@
 }
 
 button{
-  @apply hover:bg-none
+  @apply hover:bg-none cursor-pointer
 }
 
 .loadmorebg{
@@ -286,3 +286,4 @@ a.text-white .active-icon{
 .MuiPickersCalendarHeader-root *, .MuiDayCalendar-header * {
   color: #3AA1FF !important;
 }
+

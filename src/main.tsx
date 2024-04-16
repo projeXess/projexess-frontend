@@ -3,15 +3,15 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import { createHashRouter, RouterProvider } from 'react-router-dom'
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
-import DashboardLayout from './components/layout/DashboardLayout';
-import NotFound from './components/dashboard/404';
-import LandingLayout from './components/layout/LandingLayout';
 
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 
 // lazy imports
+const DashboardLayout = lazy(() => import('./components/layout/DashboardLayout'))
+const NotFound = lazy(() => import('./components/dashboard/404'))
+const LandingLayout = lazy(() => import('./components/layout/LandingLayout'))
 const Timeline = lazy(() => import('@/pages/(dashboard)/dashboard/Timeline'))
 const Backlog = lazy(() => import('@/pages/(dashboard)/dashboard/Backlog'))
 const Code = lazy(() => import('@/pages/(dashboard)/dashboard/Code'))
@@ -19,6 +19,9 @@ const Board = lazy(() => import('@/pages/(dashboard)/dashboard/Board'))
 const Bot = lazy(() => import('@/pages/(dashboard)/dashboard/bot'))
 const Dashboard = lazy(() => import('@/pages/(dashboard)/dashboard'))
 const Index = lazy(() => import('@/pages/(root)'))
+const Documents = lazy(() => import('@/pages/(dashboard)/dashboard/Documents'))
+const Team = lazy(() => import('@/pages/(dashboard)/dashboard/Team'))
+
 
 const router = createHashRouter(
   [
@@ -53,6 +56,14 @@ const router = createHashRouter(
     {
       path: "/",
       element: <LandingLayout><Index /></LandingLayout>
+    },
+    {
+      path: '/dashboard/documents',
+      element: <DashboardLayout><Documents /></DashboardLayout>
+    },
+    {
+      path: '/dashboard/team',
+      element: <DashboardLayout><Team /></DashboardLayout>
     }
   ]
 )

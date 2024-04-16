@@ -11,9 +11,9 @@ export const navLinks = [
 
 
 export const settingsItems = [
-  { name: "Documents", link: "", icon: <File /> },
-  { name: "Resources", link: "", icon: <FileStack /> },
-  { name: "Project Settings", link: "", icon: <Settings /> }
+  { name: "Documents", link: "/dashboard/documents", icon: <File /> },
+  { name: "Resources", link: "/dashboard/resources", icon: <FileStack /> },
+  { name: "Project Settings", link: "/dashboard/settings", icon: <Settings /> }
 ]
 
 
