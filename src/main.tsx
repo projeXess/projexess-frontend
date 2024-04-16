@@ -21,7 +21,7 @@ const Dashboard = lazy(() => import('@/pages/(dashboard)/dashboard'))
 const Index = lazy(() => import('@/pages/(root)'))
 const Documents = lazy(() => import('@/pages/(dashboard)/dashboard/Documents'))
 const Team = lazy(() => import('@/pages/(dashboard)/dashboard/Team'))
-
+const TeamMember = lazy(() => import('@/pages/(dashboard)/dashboard/Team/TeamMember.tsx'))
 
 const router = createHashRouter(
   [
@@ -64,7 +64,10 @@ const router = createHashRouter(
     {
       path: '/dashboard/team',
       element: <DashboardLayout><Team /></DashboardLayout>
-    }
+    }, {
+      path: '/dashboard/team/:name',
+      element: <DashboardLayout><TeamMember /></DashboardLayout>
+    },
   ]
 )
 
