@@ -190,6 +190,7 @@ function index() {
 
                                     hoverable
                                     className="w-auto"
+                                    about="designer"
                                     cover={
                                         <img
                                             alt="example"
@@ -203,13 +204,19 @@ function index() {
 
                                     ]}
                                 >
-
+                                    {/* 
                                     <Meta
-                                        className="flex justify-center text-center text-[0.7rem]"
+                                        className=""
                                         // avatar={<Avatar src="https://api.dicebear.com/7.x/miniavs/svg?seed=8" />}
                                         title={member.name}
+
                                         description={member.description}
-                                    />
+                                    /> */}
+                                    <div className="flex flex-col gap-2 justify-center text-center text-[0.75rem]">
+                                    <h1 className="font-bold text-[0.9rem]">{member.name}</h1>
+                                        <p className="font-bold text-slate-700">{member.role}</p>
+                                        <p>{member.description}</p>
+                                    </div>
                                 </Card>
                             </Link>
 
