@@ -12,20 +12,22 @@ function DashboardLayout({ children }: Props) {
     const { state } = React.useContext(AsideContext)
 
     return (
-        <DashboardAppProvider>
-            <section>
-                <Header />
-                <div className='w-full flex items-start  justify-normal h-[90dvh] overflow-hidden'>
-                    <Aside />
+        <Suspense>
+            <DashboardAppProvider>
+                <section>
+                    <Header />
+                    <div className='w-full flex items-start  justify-normal h-[90dvh] overflow-hidden'>
+                        <Aside />
 
-                    <div className={`${!state ? 'lg:w-[75%]' : 'lg:w-full'} w-full bg-[rgb(234,245,255)] h-[100%] overflow-auto`}>
-                        <Suspense fallback={<DashboardLoading />}>
-                            {children}
-                        </Suspense>
+                        <div className={`${!state ? 'lg:w-[75%]' : 'lg:w-full'} w-full bg-[rgb(234,245,255)] h-[100%] overflow-auto`}>
+                            <Suspense fallback={<DashboardLoading />}>
+                                {children}
+                            </Suspense>
+                        </div>
                     </div>
-                </div>
-            </section>
-        </DashboardAppProvider>
+                </section>
+            </DashboardAppProvider>
+       </Suspense>
 
     )
 }

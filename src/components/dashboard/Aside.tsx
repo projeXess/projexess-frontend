@@ -159,7 +159,7 @@ function Aside() {
                                     state && screenWidth <= 1024 && setState(!state)
                                 }}
                                 to={item.link}
-                                className={({ isActive }) => `${isActive && 'bg-[#3AA1FF] text-white font-bold btn-filled '} rounded-full`} key={item.name}>
+                                className={({ isActive }) => `${isActive && 'bg-[#3AA1FF] text-white font-bold btn-filled '} flex justify-between rounded-full text-[0.8rem] md:text-[1rem] `} key={item.name}>
                                 <div className='flex items-center gap-1 p-3 '>
                                     {item.icon}
                                     {item.name}

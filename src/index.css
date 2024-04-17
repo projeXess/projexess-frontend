@@ -293,3 +293,7 @@ a.text-white .active-icon{
   display: flex !important;
   justify-content: center !important;
 }
+
+.input__container input {
+  @apply p-2
+}

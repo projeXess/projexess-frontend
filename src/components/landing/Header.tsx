@@ -7,6 +7,7 @@ const navItems = [
 ]
 
 function LandingHeader() {
+
     return (
         <div className="w-full flex p-2 justify-around shadow-lg top-0 sticky z-50 bg-white">
             <div>
@@ -24,8 +25,8 @@ function LandingHeader() {
                 }
             </div>
             <div className="flex items-center gap-5">
-                <button className="btn-outlined p-2 rounded-lg">Login</button>
-                <button className="btn-filled p-2 rounded-lg">Create account</button>
+                <Link to={"/auth/login"}> <button className="btn-outlined p-2 rounded-lg">Login</button></Link>
+                <Link to={"/auth/signup"}>  <button className="btn-filled p-2 rounded-lg">Create account</button></Link>
             </div>
         </div>
     )

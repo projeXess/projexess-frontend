@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import { createHashRouter, RouterProvider } from 'react-router-dom'
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
+import AuthLayout from './components/layout/AuthLayout';
 
 
 ChartJS.register(ArcElement, Tooltip, Legend);
@@ -22,6 +23,8 @@ const Index = lazy(() => import('@/pages/(root)'))
 const Documents = lazy(() => import('@/pages/(dashboard)/dashboard/Documents'))
 const Team = lazy(() => import('@/pages/(dashboard)/dashboard/Team'))
 const TeamMember = lazy(() => import('@/pages/(dashboard)/dashboard/Team/TeamMember.tsx'))
+const Login = lazy(() => import('@/pages/(auth)/Login'))
+const Signup = lazy(() => import('@/pages/(auth)/Signup'))
 
 const router = createHashRouter(
   [
@@ -53,10 +56,7 @@ const router = createHashRouter(
       path: "/dashboard/*",
       element: <DashboardLayout><NotFound /></DashboardLayout>
     },
-    {
-      path: "/",
-      element: <LandingLayout><Index /></LandingLayout>
-    },
+
     {
       path: '/dashboard/documents',
       element: <DashboardLayout><Documents /></DashboardLayout>
@@ -67,6 +67,19 @@ const router = createHashRouter(
     }, {
       path: '/dashboard/team/:name',
       element: <DashboardLayout><TeamMember /></DashboardLayout>
+    },
+
+    {
+      path: '/auth/signup',
+      element: <AuthLayout><Signup /></AuthLayout>
+    },
+    {
+      path: "/auth/login",
+      element: <AuthLayout><Login /></AuthLayout>
+    },
+    {
+      path: "/",
+      element: <LandingLayout><Index /></LandingLayout>
     },
   ]
 )
