@@ -26,7 +26,7 @@ function Subheader({ title, description }: Props) {
 
                 <div className='flex justify-end sm:w-1/2 w-full'>
                     <div className='bg-[#3AA1FF] rounded-full flex items-center justify-normal w-auto'>
-                        <input type="text" className='bg-white p-3 rounded-full' />
+                        <input  placeholder="search ..." type="text" className='bg-white p-3 rounded-full' />
                         <button className='bg-[#3AA1FF] text-white w-auto flex p-3 gap-2 font-bold  rounded-r-full'>
                             <Search />
                             <span className='hidden sm:block'>
@@ -39,7 +39,7 @@ function Subheader({ title, description }: Props) {
             <div className='flex sm:flex-row flex-col items-center gap-3 w-full'>
                 <div className="sm:flex flex-wrap gap-2 justify-between w-full hidden">
                     {
-                        title === "Team" ? null : (
+                        title === "Team" || title === "Profile Settings"? null : (
                             <Avatar.Group>
                                 <Avatar placeholderInitials='T' rounded stacked />
                                 <Avatar rounded placeholderInitials='D' stacked />

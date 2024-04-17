@@ -27,6 +27,7 @@ const TeamMember = lazy(() => import('@/pages/(dashboard)/dashboard/Team/TeamMem
 const Login = lazy(() => import('@/pages/(auth)/Login'))
 const Signup = lazy(() => import('@/pages/(auth)/Signup'))
 const CreateProject = lazy(() => import('@/pages/(auth)/CreateProject'))
+const Profile = lazy(() => import('@/pages/(dashboard)/dashboard/Profile'))
 
 const router = createHashRouter(
   [
@@ -87,6 +88,10 @@ const router = createHashRouter(
       path: "/",
       element: <LandingLayout><Index /></LandingLayout>
     },
+    {
+      path: "/profile",
+      element: <DashboardLayout><Profile /></DashboardLayout>
+    }
   ]
 )
 

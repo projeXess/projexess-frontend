@@ -295,7 +295,11 @@ a.text-white .active-icon{
 }
 
 .input__container input {
-  @apply p-2 w-full
+  @apply p-3 w-full 
+}
+
+.input__container label {
+  /* @apply  text-[1rem]  */
 }
 
 .tags-input-container{
