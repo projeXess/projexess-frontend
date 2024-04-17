@@ -4,7 +4,8 @@ import './index.css'
 import { createHashRouter, RouterProvider } from 'react-router-dom'
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import AuthLayout from './components/layout/AuthLayout';
-
+import { store } from './redux/store'
+import { Provider } from 'react-redux'
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -92,7 +93,9 @@ const router = createHashRouter(
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <React.Suspense>
-      <RouterProvider router={router} />
+      <Provider store={store}>
+        <RouterProvider router={router} />
+      </Provider>
     </React.Suspense>
   </React.StrictMode>,
 )
