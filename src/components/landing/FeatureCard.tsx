@@ -16,7 +16,7 @@ function FeatureCard({
                 <p className="leading-relaxed text-base p-2">{description}</p>
                 <img src={image} width={240} />
             </div>
-                <button className="btn-filled w-full justify-self-end p-4  ">Start Now <ArrowRight /></button>
+                <button className="btn-filled w-full justify-self-end p-4 border border-transparent">Start Now <ArrowRight /></button>
         </div>
     )
 }
