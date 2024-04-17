@@ -12,7 +12,7 @@ function Subheader({ title, description }: Props) {
             <div>
                 <h1 className="text-gray-400 sm:text-[0.9rem] text-[0.6rem] ">Project / Project Name</h1>
             </div>
-            <div className='flex items-center justify-between flex-col md:flex-row gap-4 w-full'>
+            <div className='flex items-center justify-center flex-col md:flex-row gap-4 w-full'>
 
                 <div className='flex  gap-5 flex-col sm:w-1/2 w-full'>
                     <h1 className='font-bold text-[1.2rem] text-[#414D55] text-left'>{title}</h1>
@@ -22,10 +22,12 @@ function Subheader({ title, description }: Props) {
 
                 <div className='flex justify-end sm:w-1/2 w-full'>
                     <div className='bg-[#3AA1FF] rounded-full flex items-center justify-normal w-auto'>
-                        <input type="text" className='bg-white p-4 rounded-full'/>
-                        <button className='bg-[#3AA1FF] text-white w-auto flex p-4 gap-2 font-bold  rounded-r-full'>
+                        <input type="text" className='bg-white p-3 rounded-full'/>
+                        <button className='bg-[#3AA1FF] text-white w-auto flex p-3 gap-2 font-bold  rounded-r-full'>
                             <Search />
-                            Search
+                            <span className='hidden sm:block'>
+                                Search
+                           </span>
                         </button>
                     </div>
                 </div>

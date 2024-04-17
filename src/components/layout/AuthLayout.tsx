@@ -22,6 +22,10 @@ function AuthLayout({ children }: { children: React.ReactNode }) {
                     </div>
                 </div>
                 <div className="md:w-1/2 w-full">
+                    <div className="flex md:hidden items-center gap-3 justify-center mt-5">
+                        <img src="/logo.svg" width={40} />
+                        <h1 className="text-[2rem] p-4">Projexess</h1>
+                    </div>
                     {children}
                 </div>
             </div>

@@ -306,9 +306,12 @@ a.text-white .active-icon{
     margin-top: 1em;
     font-size: 0.9em;
     display: flex;
+    max-height:100px ;
     align-items: center;
     flex-wrap: wrap;
     gap: .5em;
+    overflow-y: auto;
+    min-width: 100%;
 }
 
 .tag-item{

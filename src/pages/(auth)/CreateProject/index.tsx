@@ -93,7 +93,7 @@ function Index() {
                 </div>
 
                 <div>
-                    <Link to={"/create-project"}>
+                    <Link to={"/dashboard"}>
                         <button className="btn-filled w-full p-2 outline-none mt-5">Create Project</button>
                     </Link>
                 </div>

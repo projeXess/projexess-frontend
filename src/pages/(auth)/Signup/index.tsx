@@ -12,11 +12,13 @@ function index() {
                 <div className="flex gap-4">
                     <div className="input__container">
                         <Input
+                            className="w-1/2"
                             placeholder="First Name"
                         />
                     </div>
                     <div className="input__container">
                         <Input
+                            className="w-1/2"
                             placeholder="Last Name"
                         />
                     </div>
