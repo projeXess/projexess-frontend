@@ -21,8 +21,9 @@ export const userSlice = createSlice({
     initialState,
     reducers: {
         login: function (_state, _action) {
-            _state.user = _action.payload.user;
+            _state.user = _action.payload;
             _state.authenticated = true
+            
         },
 
         logout: function (_state, _action) {

@@ -11,6 +11,8 @@ import { ArrowRight, BotIcon, CircuitBoard, FileStack, TagsIcon } from "lucide-r
 import { Transition } from '@headlessui/react'
 import { AsideContext } from '@/providers/Dashboard/AsideProvider'
 import { DashboardContext } from '@/providers/Dashboard/DashboardAppProvider'
+import { useSelector } from 'react-redux'
+import { RootState } from '@/redux/store'
 
 export const planningItems = [
     { name: "Timeline", link: "/dashboard/timeline", icon: <FileStack /> },
@@ -29,6 +31,7 @@ export const assItems = [
 
 
 function Aside() {
+    const { project } = useSelector((state: RootState) => state.projectReducer)
     const { state, setState } = useContext(AsideContext)
     const { screenWidth } = useContext(DashboardContext)
 
@@ -133,10 +136,12 @@ function Aside() {
         >
             <div className='w-[100%] flex flex-col items-center gap-3 top-14 relative h-[100%]'>
                 <div className='flex items-center gap-2 p-4 w-full  justify-center'>
-                    <Avatar className='bg-gray-200 rounded-none h-[50px] w-[50px]' />
+                    <Avatar className='bg-gray-200 rounded-none h-[50px] w-[50px]' >
+                        <img src='/logo.svg' />
+                    </Avatar>
                     <div className='flex flex-col'>
-                        <h1 className='font-bold'>Project Name</h1>
-                        <p className='text-gray-200'>Agriculture Project</p>
+                        <h1 className='font-bold'>{project?.projectName || "Project Name"}</h1>
+                        <p className='text-gray-200'>{project?.projectSector || "Agriculture Project"}</p>
                     </div>
 
                 </div>

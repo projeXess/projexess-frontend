@@ -54,10 +54,10 @@ function Header() {
                         <InboxIcon className='bg-white text-black' />
                     </Button>
 
-                    <Avatar className='bg-[#FF9898] size-10 lg:size-10'
-
+                    <Avatar className='bg-[#FF9898] size-10 lg:size-10 cursor-pointer'
+                
                     >
-
+                            <img src={"/default_profile.svg"} />
                     </Avatar>
                 </div>
             </div>
