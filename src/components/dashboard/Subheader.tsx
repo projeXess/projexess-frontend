@@ -1,5 +1,7 @@
+import { RootState } from '@/redux/store'
 import { Avatar } from 'flowbite-react'
 import { Search } from 'lucide-react'
+import { useSelector } from 'react-redux'
 
 type Props = {
     title: string,
@@ -7,10 +9,12 @@ type Props = {
 }
 
 function Subheader({ title, description }: Props) {
+
+    const { project } = useSelector((state: RootState) => state.projectReducer)
     return (
         <div className='w-full p-4 flex flex-col gap-7 items-start justify-start'>
             <div>
-                <h1 className="text-gray-400 sm:text-[0.9rem] text-[0.6rem] ">Project / Project Name</h1>
+                <h1 className="text-gray-400 sm:text-[0.9rem] text-[0.6rem] ">Project / {project?.projectName || "Project Name"}</h1>
             </div>
             <div className='flex items-center justify-center flex-col md:flex-row gap-4 w-full'>
 
@@ -22,12 +26,12 @@ function Subheader({ title, description }: Props) {
 
                 <div className='flex justify-end sm:w-1/2 w-full'>
                     <div className='bg-[#3AA1FF] rounded-full flex items-center justify-normal w-auto'>
-                        <input type="text" className='bg-white p-3 rounded-full'/>
+                        <input type="text" className='bg-white p-3 rounded-full' />
                         <button className='bg-[#3AA1FF] text-white w-auto flex p-3 gap-2 font-bold  rounded-r-full'>
                             <Search />
                             <span className='hidden sm:block'>
                                 Search
-                           </span>
+                            </span>
                         </button>
                     </div>
                 </div>
