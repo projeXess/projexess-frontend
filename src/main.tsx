@@ -25,6 +25,7 @@ const Team = lazy(() => import('@/pages/(dashboard)/dashboard/Team'))
 const TeamMember = lazy(() => import('@/pages/(dashboard)/dashboard/Team/TeamMember.tsx'))
 const Login = lazy(() => import('@/pages/(auth)/Login'))
 const Signup = lazy(() => import('@/pages/(auth)/Signup'))
+const CreateProject = lazy(() => import('@/pages/(auth)/CreateProject'))
 
 const router = createHashRouter(
   [
@@ -78,6 +79,10 @@ const router = createHashRouter(
       element: <AuthLayout><Login /></AuthLayout>
     },
     {
+      path: "/create-project",
+      element: <AuthLayout><CreateProject /></AuthLayout>
+    },
+    {
       path: "/",
       element: <LandingLayout><Index /></LandingLayout>
     },
@@ -86,8 +91,8 @@ const router = createHashRouter(
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    {/* <Suspense> */}
-    <RouterProvider router={router} />
-    {/* </Suspense> */}
+    <React.Suspense>
+      <RouterProvider router={router} />
+    </React.Suspense>
   </React.StrictMode>,
 )

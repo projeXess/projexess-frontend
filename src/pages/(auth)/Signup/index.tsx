@@ -28,9 +28,7 @@ function index() {
                 </div>
 
                 <div className="input__container">
-                    <Input
-                        placeholder="Password"
-                    />
+                    <Input.Password className="p-3" placeholder="Password" />
                 </div>
 
                 <div className="flex gap-3 items-center">
@@ -39,7 +37,9 @@ function index() {
                 </div>
 
                 <div>
-                    <button className="btn-filled w-full p-2 outline-none mt-5">Create Account</button>
+                    <Link to={"/create-project"}>
+                        <button className="btn-filled w-full p-2 outline-none mt-5">Create Account</button>
+                    </Link>
                 </div>
 
                 <div className="flex p-2 justify-between items-center gap-5">
