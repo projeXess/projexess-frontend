@@ -377,3 +377,9 @@ a.text-white .active-icon{
   text-align: left;
   font-size: 1.2em;
 }
+
+
+#product-ul li{
+  /* list-style-type: disc; */
+  margin-top: 1em;
+}

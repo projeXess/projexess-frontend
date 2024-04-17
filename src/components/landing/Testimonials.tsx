@@ -14,7 +14,7 @@ function Testimonials() {
         slidesToScroll: 1,
     };
     return (
-        <div className="w-full flex flex-col gap-5 p-10">
+        <div className="w-full bg-[#3aa0ff24] flex flex-col gap-5 p-10">
             <h1 className="text-[1.3rem] font-medium">Testimonials</h1>
             <p className="text-[#5C5C5C] text-[.8rem]">See different things that we deal with and what you can do with our platform.</p>
 
