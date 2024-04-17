@@ -54,11 +54,14 @@ function Header() {
                         <InboxIcon className='bg-white text-black' />
                     </Button>
 
-                    <Avatar className='bg-[#FF9898] size-10 lg:size-10 cursor-pointer'
-                
-                    >
+                    <Link to={"/dashboard/profile"}>
+
+                        <Avatar className='bg-[#FF9898] size-10 lg:size-10 cursor-pointer'
+
+                        >
                             <img src={"/default_profile.svg"} />
-                    </Avatar>
+                        </Avatar>
+                    </Link>
                 </div>
             </div>
 

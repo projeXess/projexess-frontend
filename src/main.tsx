@@ -55,11 +55,7 @@ const router = createHashRouter(
       path: '/dashboard',
       element: <DashboardLayout><Dashboard /> </DashboardLayout>
     },
-    {
-      path: "/dashboard/*",
-      element: <DashboardLayout><NotFound /></DashboardLayout>
-    },
-
+   
     {
       path: '/dashboard/documents',
       element: <DashboardLayout><Documents /></DashboardLayout>
@@ -89,9 +85,18 @@ const router = createHashRouter(
       element: <LandingLayout><Index /></LandingLayout>
     },
     {
-      path: "/profile",
+      path: "/dashboard/profile",
       element: <DashboardLayout><Profile /></DashboardLayout>
-    }
+    },
+     {
+      path: "/dashboard/*",
+      element: <DashboardLayout><NotFound /></DashboardLayout>
+    },
+
+    {
+      path: "/*",
+      element: <div className='w-full h-[100dvh] grid place-content-center'><NotFound /></div>
+    },
   ]
 )
 

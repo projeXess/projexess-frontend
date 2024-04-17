@@ -86,31 +86,31 @@ function Aside() {
                 </>
             ),
         },
-        {
-            key: '2',
-            label: "Development",
-            children: (
-                <>
-                    {
-                        devItems.map(item => (
-                            <NavLink
-                                onClick={() => {
-                                    state && screenWidth <= 1024 && setState(!state)
-                                }}
-                                to={item.link} className={({ isActive }) => `${isActive && 'bg-[#3AA1FF] text-white font-bold btn-filled '} `} key={item.name}>
-                                <div className='flex items-center gap-2'>
-                                    {item.icon}
-                                    {item.name}
-                                </div>
-                                <span className='active-icon justify-self-end bg-white rounded-full text-[#3AA1FF] p-1'>
-                                    <ArrowRight />
-                                </span>
-                            </NavLink>
-                        ))
-                    }
-                </>
-            ),
-        },
+        // {
+        //     key: '2',
+        //     label: "Development",
+        //     children: (
+        //         <>
+        //             {
+        //                 devItems.map(item => (
+        //                     <NavLink
+        //                         onClick={() => {
+        //                             state && screenWidth <= 1024 && setState(!state)
+        //                         }}
+        //                         to={item.link} className={({ isActive }) => `${isActive && 'bg-[#3AA1FF] text-white font-bold btn-filled '} `} key={item.name}>
+        //                         <div className='flex items-center gap-2'>
+        //                             {item.icon}
+        //                             {item.name}
+        //                         </div>
+        //                         <span className='active-icon justify-self-end bg-white rounded-full text-[#3AA1FF] p-1'>
+        //                             <ArrowRight />
+        //                         </span>
+        //                     </NavLink>
+        //                 ))
+        //             }
+        //         </>
+        //     ),
+        // },
 
     ]
 
