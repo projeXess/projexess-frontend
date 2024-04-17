@@ -35,7 +35,9 @@ function Index() {
         projectDeadline: '',
         projectSector: '',
         projectMembers: [],
-        projectOwner: user?.email
+        projectOwner: user?.email,
+        country: '',
+        city: ''
     })
 
     const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -59,7 +61,7 @@ function Index() {
     }, [])
 
     return (
-        <div className="w-full grid place-content-center h-full text-left p-4">
+        <div className="w-full grid place-content-start overflow-auto h-full text-left p-4">
             <h1 className="text-[#040308] text-[1.5rem] font-bold">Project</h1>
             <p className="text-[0.75rem] mt-5">Enter all required information about your project and team <br /> that you want to start with in our system</p>
 
@@ -86,6 +88,29 @@ function Index() {
                         <Select.Option value="Industry">Industry</Select.Option>
                         <Select.Option value="Transport">Transport</Select.Option>
                         <Select.Option value="Trade and Commerce">Trade and Commerce</Select.Option>
+                    </Select>
+                </div>
+
+                <div className='flex gap-4'>
+                    <Select
+                        onChange={(e) => setFormData(prev => ({ ...prev, country: e }))}
+                        className="w-full"
+                        placeholder="Select country"
+                    >
+
+                        <Select.Option value="Rwanda">Rwanda</Select.Option>
+                    </Select>
+
+                    <Select
+                        onChange={(e) => setFormData(prev => ({ ...prev, city: e }))}
+                        className="w-full"
+                        placeholder="Select city"
+                    >
+
+                        <Select.Option value="Rubavu">Rubavu</Select.Option>
+                        <Select.Option value="Gasabo">Gasabo</Select.Option>
+                        <Select.Option value="Musanze">Musanze</Select.Option>
+                        <Select.Option value="Nyagatare">Nyagatare</Select.Option>
                     </Select>
                 </div>
 

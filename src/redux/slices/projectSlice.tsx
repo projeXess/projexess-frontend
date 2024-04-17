@@ -10,6 +10,8 @@ export interface projectState {
         projectDeadline: string;
         projectDescription: string;
         projectOWner: string;
+        country: string;
+        city:string;
     } | null,
 }
 
