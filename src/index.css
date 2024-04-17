@@ -341,3 +341,39 @@ a.text-white .active-icon{
     border: none;
     outline: none;
 }
+
+.active {
+  position: absolute;
+  z-index: 50;
+  display: flex;
+  justify-content: start;
+  overflow: hidden !important;
+  flex-direction: column;
+  top: 0;
+  gap:3em;
+  background: white;
+  width: 100%;
+  float: right; 
+  right: -800px;
+  height: 100dvh;
+  box-shadow: 0px 30px 30px lightgrey;
+  animation:aside 0.5s forwards;
+}
+
+@keyframes aside {
+  from {
+    right: -800px;
+  }
+  to {
+    right: 0;
+  }
+}
+
+.active div {
+  display: flex;
+}
+
+.active a {
+  text-align: left;
+  font-size: 1.2em;
+}
