@@ -16,15 +16,15 @@ function Index() {
         e.target.value = ''
     }
     function removeTag(index: number) {
-        setTags(tags.filter((el, i) => i !== index))
+        setTags(tags.filter((_el, i) => i !== index))
     }
     return (
-        <div className="w-full grid place-content-center h-full text-left">
+        <div className="w-full grid place-content-center h-full text-left p-4">
             <h1 className="text-[#040308] text-[1.5rem] font-bold">Project</h1>
             <p className="text-[0.75rem] mt-5">Enter all required information about your project and team <br /> that you want to start with in our system</p>
 
 
-            <form className="flex flex-col gap-5 mt-10">
+            <form className="flex flex-col gap-5 mt-10 p-2">
                 <div className="input__container">
                     <Input
                         placeholder="Project Name"

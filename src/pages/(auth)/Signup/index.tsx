@@ -4,11 +4,11 @@ import { FaGoogle, FaApple } from 'react-icons/fa'
 
 function index() {
     return (
-        <div className="w-full grid place-content-center h-full text-left">
+        <div className="w-full grid place-content-center h-full text-left p-4">
             <h1 className="text-[#040308] text-[1.5rem] font-bold">Create Account</h1>
             <p className="text-[0.9rem]">Already have an account ? <Link to={"/auth/login"} className="text-blue-500">login</Link></p>
 
-            <form className="flex flex-col gap-5 mt-10">
+            <form className="flex flex-col gap-5 mt-10 p-2">
                 <div className="flex gap-4">
                     <div className="input__container">
                         <Input

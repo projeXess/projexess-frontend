@@ -4,7 +4,7 @@ function AuthLayout({ children }: { children: React.ReactNode }) {
     return (
         <Suspense>
             <div className="w-full h-[100dvh] flex"> 
-                <div className="w-1/2 bg-[#06061c] h-full text-white md:flex hidden flex-col justify-between p-5 pt-10 pb-10">
+                <div className="w-1/2 bg-[#06061c] h-full text-white md:flex hidden flex-col justify-evenly p-5 pt-10 pb-10 gap-44">
                     <div className="flex items-center gap-3">
                         <img src="/logo.svg" width={40} />
                         <h1 className="text-[2rem] p-4">Projexess</h1>
