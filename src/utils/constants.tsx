@@ -1,4 +1,5 @@
 import { FacebookIcon, File, FileStack, InstagramIcon, LinkedinIcon, Settings, TwitterIcon } from "lucide-react";
+import { FaPeopleArrows } from "react-icons/fa";
 
 export const navLinks = [
   { name: "Your tasks", link: "" },
@@ -12,6 +13,7 @@ export const navLinks = [
 
 export const settingsItems = [
   { name: "Documents", link: "/dashboard/documents", icon: <File /> },
+  { name: "Team", link: "/dashboard/team", icon: <FaPeopleArrows /> },
   { name: "Resources", link: "/dashboard/resources", icon: <FileStack /> },
   { name: "Settings", link: "/dashboard/profile", icon: <Settings /> }
 ]
@@ -96,8 +98,8 @@ export const valuePropoItems = [
 
 
 export const socials = [
-  { name: 'Twitter', icon: <TwitterIcon  />, link:'' },
-  { name: 'Instagram', icon: <InstagramIcon /> ,link: '' },
+  { name: 'Twitter', icon: <TwitterIcon />, link: '' },
+  { name: 'Instagram', icon: <InstagramIcon />, link: '' },
   { name: 'Facebook', icon: <FacebookIcon />, link: '' },
   { name: 'Linkedin', icon: <LinkedinIcon />, link: '' },
 ]

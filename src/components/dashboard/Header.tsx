@@ -25,7 +25,10 @@ function Header() {
                             state ? <CopyXIcon className='bg-white text-black' /> : (<MenuIcon className='bg-white text-black' />)
                         }
                     </Button>
-                    <h1 className='md:text-[1.5rem] text-[0.8rem] font-bold' >ProjeXess</h1>
+                    <div className='flex items-center gap-3'>
+                        <img src="/logo.svg" width={30} />
+                        <h1 className='md:text-[1.5rem] text-[0.8rem] font-bold' >ProjeXess</h1>
+                    </div>
                 </div>
                 <div className='hidden p-1 items-center gap-7 sm:flex md:text-[1rem] text-[0.6rem]'>
                     {
