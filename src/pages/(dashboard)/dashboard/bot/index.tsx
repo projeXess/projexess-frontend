@@ -1,10 +1,7 @@
-import Insight from "@/components/dashboard/Insight"
 import Subheader from "@/components/dashboard/Subheader"
 import LineChart from "@/components/graphs/LineChart"
 import PieChart from "@/components/graphs/PieChart"
 import Calendar from "@/components/ui/Calendar"
-import { insights } from "@/utils/constants"
-import { Avatar } from 'flowbite-react'
 
 
 function Bot() {
