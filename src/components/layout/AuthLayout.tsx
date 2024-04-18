@@ -1,8 +1,9 @@
 import { Suspense } from "react"
+import MainLoader from "../dashboard/MainLoader"
 
 function AuthLayout({ children }: { children: React.ReactNode }) {
     return (
-        <Suspense>
+        <Suspense fallback={<MainLoader />}>
             <div className="w-full h-[100dvh] flex"> 
                 <div className="w-1/2 bg-[#06061c] h-full text-white md:flex hidden flex-col justify-evenly p-5 pt-10 pb-10 gap-44">
                     <div className="flex items-center gap-3">
