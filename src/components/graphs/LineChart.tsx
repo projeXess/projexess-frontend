@@ -13,21 +13,21 @@ const LineChart = () => {
         labels: ["Jun", "July", "August", "September", "October", "November", "December"],
         datasets: [
             {
-                label: "Designers",
+                label: "Environmental",
                 data: [12, 34, 2, 67, 12, 7, 10],
                 backgroundColor: "#56FF47",
                 borderColor: '#56FF47',
                 pointStyle: 'line'
             },
             {
-                label: "Backend",
+                label: "Technological",
                 data: [23, 45, 12, 56, 45, 12, 7],
                 backgroundColor: "#8378FF",
                 borderColor: '#8378FF',
                 pointStyle: 'line'
             },
             {
-                label: "Frontend",
+                label: "Economical",
                 data: [1, 4, 6, 2, 7, 5, 3],
                 backgroundColor: "#FF9999",
                 borderColor: '#FF9999',
