@@ -1,6 +1,7 @@
 import { ArrowUpRight } from "lucide-react"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from "react-router-dom";
 
 
 function OurTeam() {
@@ -36,7 +37,9 @@ function OurTeam() {
                                     Javascript, Typescript, Python and many others.
                                 </p>
 
+                            <Link to={"https://mdan.vercel.app"}>
                                 <button className="btn-filled p-2 rounded-full border-blue-400 mt-5">View Portfolio <ArrowUpRight /></button>
+                            </Link>
                             </div>
                             <div
                                 className="w-1/2 flex items-center  justify-center"

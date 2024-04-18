@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react"
+import { Link } from "react-router-dom"
 
 function FeatureCard({
     name,
@@ -16,7 +17,9 @@ function FeatureCard({
                 <p className="leading-relaxed text-base p-2">{description}</p>
                 <img src={image} width={240} />
             </div>
+               <Link to={"/auth/signup"}>
                 <button className="btn-filled w-full justify-self-end p-4 border border-transparent">Start Now <ArrowRight /></button>
+               </Link>
         </div>
     )
 }

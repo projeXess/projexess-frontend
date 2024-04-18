@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react"
 import FeatureCard from "./FeatureCard"
+import { Link } from "react-router-dom"
 
 const features = [
     {
@@ -29,7 +30,9 @@ function Features() {
 
             <div className="flex w-full items-center justify-evenly mt-5">
                 <h1 className="text-[1.5rem] font-bold">Features</h1>
-                <button className="btn-filled outline-none p-3 rounded-full flex gap-5">Get Started <ArrowRight /></button>
+                <Link to={"/auth/signup"}>
+                    <button className="btn-filled outline-none p-3 rounded-full flex gap-5">Get Started <ArrowRight /></button>
+                </Link>
             </div>
 
             <div className="flex p-4 mt-16 justify-around">
