@@ -17,7 +17,7 @@ const BarChart: React.FC = () => {
             myChart = new Chart(chartRef.current, {
                 type: 'bar',
                 data: {
-                    labels: ['Jun', 'July', 'August', 'September'],
+                    labels: ['Frontend', 'Designers', 'Backend', 'Engineers'],
                     datasets: [{
                         label: '.',
                         data: [12, 19, 3, 5],
