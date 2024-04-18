@@ -6,6 +6,8 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import AuthLayout from './components/layout/AuthLayout';
 import { store } from './redux/store'
 import { Provider } from 'react-redux'
+import DashboardLoading from './components/dashboard/Loading';
+import MainLoader from './components/dashboard/MainLoader';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -55,7 +57,7 @@ const router = createHashRouter(
       path: '/dashboard',
       element: <DashboardLayout><Dashboard /> </DashboardLayout>
     },
-   
+
     {
       path: '/dashboard/documents',
       element: <DashboardLayout><Documents /></DashboardLayout>
@@ -88,7 +90,7 @@ const router = createHashRouter(
       path: "/dashboard/profile",
       element: <DashboardLayout><Profile /></DashboardLayout>
     },
-     {
+    {
       path: "/dashboard/*",
       element: <DashboardLayout><NotFound /></DashboardLayout>
     },
@@ -102,7 +104,7 @@ const router = createHashRouter(
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <React.Suspense>
+    <React.Suspense fallback={<MainLoader/>}>
       <Provider store={store}>
         <RouterProvider router={router} />
       </Provider>
