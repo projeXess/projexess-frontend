@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { login } from "@/redux/slices/userSlice"
 import { Input } from "antd"
 import { useRef, useState, ChangeEvent, FormEvent, useEffect, MouseEvent  } from "react"
@@ -5,7 +6,7 @@ import { FaGoogle, FaApple } from "react-icons/fa"
 import { useDispatch } from "react-redux"
 import { Link, useNavigate } from "react-router-dom"
 
-function index() {
+function Index() {
 
     const navigate = useNavigate()
     const dispatch = useDispatch()
@@ -86,4 +87,4 @@ function index() {
     )
 }
 
-export default index
+export default Index
