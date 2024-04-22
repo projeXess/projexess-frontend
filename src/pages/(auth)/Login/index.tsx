@@ -1,23 +1,64 @@
+import { login } from "@/redux/slices/userSlice"
 import { Input } from "antd"
+import { useRef, useState, ChangeEvent, FormEvent, useEffect } from "react"
 import { FaGoogle, FaApple } from "react-icons/fa"
-import { Link } from "react-router-dom"
+import { useDispatch } from "react-redux"
+import { Link, useNavigate } from "react-router-dom"
 
 function index() {
+
+    const navigate = useNavigate()
+    const dispatch = useDispatch()
+    const formRef = useRef<any>(null)
+    const [formData, setFormData] = useState({
+        firstName: '',
+        lastName: '',
+        email: '',
+        password: ''
+    })
+
+    const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+        setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }))
+    }
+    const handleSubmit = async (e: FormEvent<HTMLFormElement> | MouseEvent<HTMLButtonElement>) => {
+        e.preventDefault()
+        dispatch(login({ ...formData }))
+        navigate('/dashboard')
+    }
+
+    useEffect(() => {
+        const handleRedirect = (e: KeyboardEvent) => {
+            if (e.key === "Enter") {
+                e.preventDefault()
+            }
+        }
+        window.addEventListener('keydown', e => handleRedirect(e))
+
+        return () => window.removeEventListener('keydown', e => handleRedirect(e))
+    }, [])
+
+
     return (
         <div className="w-full grid place-content-center h-full text-left">
             <h1 className="text-[#040308] text-[1.5rem] font-bold">Welcome Back</h1>
             <p className="text-[0.9rem]">Don&apos;t have an account yet ? <Link to={"/auth/signup"} className="text-blue-500">sign up</Link></p>
 
-            <form className="flex w-[100%] flex-col gap-5 mt-10">
+ <form className="flex flex-col gap-5 mt-10 p-2" onSubmit={(e) => e.preventDefault()} ref={formRef}>
 
                 <div className="input__container">
-                    <Input
+                   <Input
+                        onChange={handleChange}
+                        value={formData.email}
+                        name="email"
                         placeholder="Email"
                     />
                 </div>
 
                 <div className="input__container">
-                    <Input.Password className="p-3" placeholder="Password" />
+                    <Input.Password
+                        onChange={handleChange}
+                        value={formData.password}
+                        className="p-3" name="password" placeholder="Password" />
                 </div>
 
                 <div className="flex gap-3 items-center justify-end">
@@ -26,7 +67,7 @@ function index() {
 
                 <div>
                     <Link to={"/dashboard"}>
-                        <button className="btn-filled w-full p-2 outline-none mt-5">Login</button>
+                        <button className="btn-filled w-full p-2 outline-none mt-5" type="submit" onClick={(e) => handleSubmit(e)}>Continue </button>
                     </Link>
                 </div>
 
