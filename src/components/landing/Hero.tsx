@@ -10,7 +10,7 @@ function Hero() {
                 <p className="text-[#5C5C5C] text-[.9rem] leading-7">
                     Empowering Dreams, Building Futures, Your Bridge to Project Success . We're here <br />  to bridge the gap between dreams and reality,.
                 </p>
-                <Link to={"/auth/signin"}>
+                <Link to={"/auth/login"}>
                     <button className="btn-filled p-2 pl-6 pr-6 outline-none rounded-full">Explore <ArrowRight /> </button>
                 </Link>
             </div>
