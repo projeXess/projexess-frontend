@@ -11,8 +11,8 @@ import { ArrowRight, BotIcon, CircuitBoard, FileStack, TagsIcon } from "lucide-r
 import { Transition } from '@headlessui/react'
 import { AsideContext } from '@/providers/Dashboard/AsideProvider'
 import { DashboardContext } from '@/providers/Dashboard/DashboardAppProvider'
-import { useSelector } from 'react-redux'
-import { RootState } from '@/redux/store'
+// import { useSelector } from 'react-redux'
+// import { RootState } from '@/redux/store'
 
 export const planningItems = [
     { name: "Timeline", link: "/dashboard/timeline", icon: <FileStack /> },
@@ -31,7 +31,7 @@ export const assItems = [
 
 
 function Aside() {
-    const { project } = useSelector((state: RootState) => state.projectReducer)
+    const project = JSON.parse(localStorage.getItem('userinfo')!).project
     const { state, setState } = useContext(AsideContext)
     const { screenWidth } = useContext(DashboardContext)
 

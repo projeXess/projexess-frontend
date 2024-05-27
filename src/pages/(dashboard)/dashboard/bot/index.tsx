@@ -31,98 +31,118 @@ function Bot() {
               <div className='flex flex-col gap-2'>
                 <h1 className='text-[2rem] font-bold text-[#5e5e5e]'> Collaborative Approach: </h1>
                 <p className='text-[#5D5D5D] text-[0.8rem] text-[1em]'>
-                  Work closely with local universities, agricultural experts, and farmers to ensure the technology <br></br>meets the specific needs and is adaptable to local conditions.:<br></br><br></br>
+                  Work closely with local universities, road safety experts, and community organizations to ensure the technology meets specific needs and adapts to local conditions.<br></br><br></br>
 
-                  Local Universities <br></br>
-                  1. University of Rwanda - The largest university in the country with strong programs in agriculture and technology.<br></br>
-                  2. Institut d'Enseignement Supérieur de Ruhengeri (INES-Ruhengeri) - Known for its applied sciences programs, including agriculture.<br></br>
-                  3. Rwanda Polytechnic (RP) - Offers various programs through its colleges that focus on technology and practical skills relevant to agriculture.<br></br><br></br>
+                  <span className="font-bold">Local Universities </span><br></br><br></br>
+                  <span className="font-bold">1. University of Rwanda</span> - Engage their technology and engineering departments for research and development support.<br></br><br></br>
+                  <span className="font-bold">2. Institut d'Enseignement Supérieur de Ruhengeri (INES-Ruhengeri)</span> -  Utilize their expertise in applied sciences for technical validation and testing.<br></br><br></br>
+                  <span className="font-bold">3. Rwanda Polytechnic (RP)</span> - Collaborate on training programs for local technicians and end-users.<br></br><br></br>
+                  <span className="font-bold">4. ULK - </span>Partner with their faculties of science and technology for research and development support.<br></br><br></br>
+                  <span className="font-bold">5. Adventist University of Central Africa (AUCA)</span> - Engage their ICT and engineering programs for technical expertise and collaboration.<br></br><br></br>
 
-                  Agricultural Experts<br></br><br></br>
+                  <span className="font-bold">Road Safety Experts</span><br></br><br></br>
                   Experts in Rwanda can be found working within universities, government agencies, and international organizations. Some key contacts would include:<br></br><br></br>
-                  - Faculty members from the agriculture departments of the universities listed above. <br></br>
-                  - Rwanda Agriculture Board (RAB) - The main government body responsible for agricultural research and development. Experts here are involved in everything from policy making to practical agricultural technologies.<br></br>
-                  - International organizations The Food and Agriculture Organization (FAO) and the International Fund for Agricultural Development (IFAD) often have local experts focused on Rwandan agriculture.<br></br><br></br>
+                  - Partner with the Rwanda National Police and Rwanda Transport Development Agency for data and regulatory support.<br></br><br></br>
+                  - Collaborate with entities like the World Health Organization and the Global Road Safety Partnership for expertise and funding.<br></br><br></br>
+                  - <span className="font-bold">Rwanda Transport Development Agency (RTDA):</span> Work with them for regulatory guidance and infrastructure support.<br></br><br></br>
+                  - <span className="font-bold">Rwanda Utilities Regulatory Authority (RURA): </span>Engage for regulatory compliance and operational permits <br></br><br></br>
 
-                  Farmers and Farmer Organizations<br></br><br></br>
-                  - Imbaraga Farmers Organization - A well-established farmer organization in Rwanda that advocates for farmers' rights and provides training and resources.<br></br>
-                  - COAGIR - Cooperative for Agriculture and Livelihood Improvement, a cooperative that supports agricultural development and sustainable practices among its members.<br></br>
-                  - Local cooperatives in various districts, which are typically involved in specific types of crops such as coffee, tea, or staples like maize and beans.<br></br><br></br>
+                  <span className="font-bold">Community Organizations</span><br></br><br></br>
+                  <span className="font-bold">- SafeMotos:</span> A local startup focusing on safe motorcycle taxi services, which can provide valuable insights and collaboration opportunities.<br></br><br></br>
+                  <span className="font-bold">- Rwanda Youth in Road Safety (RYRS):</span> Engage with this organization for youth-led road safety education and advocacy.<br></br><br></br>
+                  <span className="font-bold">- Society for Family Health (SFH) Rwanda:</span> Work with them for community health and safety campaigns that can include road safety elements.<br></br><br></br>
+
+                  <span className="font-bold">Community Leaders</span><br></br><br></br>
+                  <span className="font-bold">- Local Administrative Entities Development Agency (LODA):</span> A local startup focusing on safe motorcycle taxi services, which can provide valuable insights and collaboration opportunities.<br></br><br></br>
+                  <span className="font-bold">- National Itorero Commission:</span> Engage with this organization for youth-led road safety education and advocacy.<br></br><br></br>
 
                 </p>
                 <h1 className='text-[2rem] font-bold text-[#5e5e5e]'> Training and Education </h1>
-                <p className='text-[#5D5D5D] text-[0.8rem] text-[1em]'>
-                  Develop comprehensive training programs to ensure farmers and local technicians can operate and maintain the drones.
-                </p>
+                <span className="font-bold">Training Institutions:</span>
+                <span className="font-bold">- Integrated Polytechnic Regional Centre (IPRC):</span> A local startup focusing on safe motorcycle taxi services, which can provide valuable insights and collaboration opportunities.<br></br><br></br>
+                <span className="font-bold">- Technical and Vocational Education and Training (TVET) Centers: </span> Engage with this organization for youth-led road safety education and advocacy.<br></br><br></br>
+                Develop comprehensive training programs for local technicians and end-users to ensure they can operate and maintain SpeedSense effectively. This includes hands-on training sessions, workshops, and ongoing support.<br></br><br></br>
+
                 <h1 className='text-[2rem] font-bold text-[#5e5e5e]'> Sustainability Focus </h1>
                 <p className='text-[#5D5D5D] text-[0.8rem] text-[1em]'>
                   Ensure the project is economically sustainable by evaluating cost-benefit ratios and exploring ways to make it affordable for small-scale farmers, including leasing models or shared service platforms.<br></br><br></br>
 
-                  Average Income of Rwandan Farmers<br></br>
-                  The average income for Rwandan farmers largely depends on their farming scale and type. Let's estimate:<br></br>
-                  - Subsistence Farmers: Typically, these farmers may earn around **$30 to $50 per month** from selling surplus produce, if available.<br></br>
-                  - Commercial Farmers: Those involved in growing cash crops like coffee and tea might earn substantially more, approximately **$100 to $300 per month**, depending on crop yield and market prices.<br></br><br></br>
-
-                  Cost Analysis for Drone Technology<br></br>
-                  To make this technology viable, consider the initial and recurring costs for using drones:<br></br>
-                  - Initial Costs:<br></br>
-                  - Purchase Cost of a Drone: A commercial agricultural drone can cost anywhere from $5,000 to $20,000 each, depending on capabilities.<br></br>
-                  - **Training and Setup**: Initial training and setup might cost around **$1,000**.<br></br><br></br>
-
-                  - Operational Costs:<br></br>
-                  - Maintenance: Approximately **$500 per year** for maintenance.<br></br>
-                  - Operation Costs: Including fuel or battery charges, might run about **$50 per operation**.<br></br><br></br>
-
-                  Pricing Models<br></br>
-                  Given these costs and the income levels of farmers, the following models could help make this technology accessible:<br></br>
-                  - Leasing: Instead of purchasing, farmers could lease a drone for about **$100 to $200 per month** during planting and spraying seasons.<br></br>
-                  - Pay-per-Use Service: A service provider could offer drone spraying or monitoring for **$10 to $20 per acre per service**.<br></br>
-                  - Shared Use: Farmers could form a cooperative and share the cost of one drone system, potentially reducing individual costs dramatically.<br></br> For example, if 100 farmers share one drone, the cost per farmer could be reduced to as little as **$20 to $40 per month**.<br></br><br></br>
-
-                  Subsidies and Financial Support<br></br>
-                  To further reduce the burden:<br></br>
-                  - Government Subsidies: Could cover 50% of the leasing or purchase cost.<br></br>
-                  - International Grants: Might be used to subsidize the initial setup and training costs.<br></br><br></br>
-
+                  <span className="font-bold">Economic Support and Financial Institutions:</span><br></br><br></br>
+                  <span className="font-bold">- Development Bank of Rwanda (BRD):</span> Explore funding and subsidy opportunities for technology adoption in the agricultural sector.<br></br><br></br>
+                  <span className="font-bold">- Rwanda Development Board (RDB): </span>Seek support for economic sustainability evaluations and potential grants.<br></br><br></br>
 
                 </p>
                 <h1 className='text-[2rem] font-bold text-[#5e5e5e]'> Regulatory Compliance:  </h1>
                 <p className='text-[#5D5D5D] text-[0.8rem] text-[1em]'>
-                  Navigate and comply with local aviation and pesticide application laws to ensure the safe and lawful operation of drones.<br></br><br></br>
+                  Navigate and comply with local laws to ensure safe and lawful operation of SpeedSense.<br></br><br></br>
 
-                  1. Drone Registration: All drones must be registered with the Rwanda Civil Aviation Authority (RCAA) using the RCAA-Form-UAS001. Only Rwandan citizens or permanent residents aged 21 or older can register a drone. The registration process typically takes about three months and incurs a fee of approximately 110,000 RWF (around 125 Euros).<br></br><br></br>
+                  <span className="font-bold">1. Rwanda Utilities Regulatory Authority (RURA)</span><br></br><br></br>
 
-                  2. Operational Permit: In addition to registration, drone operators must obtain a specific operational permit from the RCAA by filling out the RCAA-Form-RPAS002. This application process can take between two to four weeks.<br></br><br></br>
+                  <span className="font-bold">Role:</span> Ensure that all SpeedSense devices comply with national telecommunications and technology regulations.<br></br>
+                  <span className="font-bold">Tasks:</span> Obtain necessary certifications and permits for the operation of the SpeedSense devices within vehicles.<br></br><br></br>
 
-                  3. Insurance Requirement: Insurance is mandatory for both private and commercial drone operations in Rwanda.<br></br><br></br>
+                  <span className="font-bold">Rwanda National Police (RNP)</span><br></br><br></br>
 
-                  4. Flight Restrictions: Drones are prohibited from flying within a 10-kilometer radius of any airport or airfield and must maintain a distance of 50 meters from people, buildings, vehicles, and animals unless directly involved in the drone operation. Night flights are not allowed, and drones must not exceed a speed of 100 kilometers per hour..<br></br><br></br>
+                  <span className="font-bold">Role:</span> Collaborate for regulatory compliance and road safety integration.<br></br>
+                  <span className="font-bold">Tasks:</span> Work together to ensure the SpeedSense system aligns with national road safety policies and assist in the enforcement of speed limits.<br></br><br></br>
 
-                  5. Foreign Operators: While foreign drone operators can register their drones, the actual drone operation must be conducted by a Rwandan citizen or a registered Rwandan business. It is highly recommended to employ a local drone operator to facilitate permitting and legal operations.<br></br><br></br>
+                  <span className="font-bold">Ministry of Infrastructure (MININFRA)</span><br></br><br></br>
+
+                  <span className="font-bold">Role:</span> Ensure the technology adheres to national infrastructure standards and regulations.<br></br>
+                  <span className="font-bold">Tasks:</span> Obtain necessary approvals for integrating SpeedSense into public and private transportation systems.<br></br><br></br>
 
                 </p>
                 <h1 className='text-[2rem] font-bold text-[#5e5e5e]'> Continuous Feedback Loop: </h1>
                 <p className='text-[#5D5D5D] text-[0.8rem] text-[1em]'>
-                  Establish a feedback mechanism to continuously gather data and insights from users to improve the technology and its application.
+                  <span className="font-bold">National Institute of Statistics of Rwanda (NISR)</span><br></br><br></br>
+
+                  <span className="font-bold">Role:</span> Collaborate for comprehensive data collection and analysis on road safety and SpeedSense performance.<br></br>
+                  <span className="font-bold">Tasks:</span> Utilize existing statistical frameworks to gather data on traffic incidents and user behavior, providing insights for system improvements.<br></br><br></br>
+
+                  <span className="font-bold">Rwanda Information Society Authority (RISA)</span><br></br><br></br>
+
+                  <span className="font-bold">Role:</span> Engage for digital solutions in gathering user feedback and enhancing system functionalities.<br></br>
+                  <span className="font-bold">Tasks:</span> Develop and implement digital platforms for real-time feedback from users and stakeholders to continuously refine the SpeedSense technology.<br></br><br></br>
+                  Establish a feedback mechanism to continuously gather data and insights from users to improve the technology and its application.<br></br>
                   This plan is structured to be adaptable and could be revised based on ongoing feedback and technological advancements.<br></br><br></br>
                 </p>
                 <h1 className='text-[2rem] font-bold text-[#5e5e5e]'> CHALLENGES: </h1>
                 <p className='text-[#5D5D5D] text-[0.8rem] text-[1em]'>
-                  Implementing a drone-based crop monitoring and pesticide spraying system in Rwanda can encounter several challenges:<br></br><br></br>
+                  Implementing SpeedSense in Rwanda can encounter several challenges:<br></br><br></br>
 
-                  1. Technological Adoption and Literacy: Farmers in Rwanda have LOW levels of technological literacy. Introducing advanced technologies like drones could require significant training and support to ensure comfortable and effective use by local farmers.<br></br><br></br>
+                  <span className="font-bold">1. Technological Adoption and Literacy:</span><br></br><br></br>
+                  <span className="font-bold">- Challenge:</span> Low levels of technological literacy among drivers, especially in rural areas.<br></br>
+                  <span className="font-bold">- Example:</span> Many drivers in regions like Nyabihu and Rusizi may be unfamiliar with advanced road safety technology, requiring significant training programs.<br></br><br></br>
 
-                  2. Cost and Access to Technology: The initial cost of drones, along with their maintenance and operation, can be high. This might be prohibitive for small-scale farmers unless subsidized or provided through a cooperative model that allows cost-sharing.<br></br><br></br>
+                  <span className="font-bold">2. Cost and Access to Technology:</span><br></br><br></br>
+                  <span className="font-bold">- Challenge:</span> High initial costs for SpeedSense devices may be prohibitive.<br></br>
+                  <span className="font-bold">- Example:</span> Taxi drivers and moto-taxi operators, common in Kigali and other cities, may find it difficult to afford these devices without financial assistance or subsidies.<br></br><br></br>
 
-                  3. Infrastructure Issues: Reliable access to electricity and internet, which are crucial for the operation and data transmission capabilities of drones, can be inconsistent in rural areas of Rwanda, this is not available in more than 10 districts in Rwanda.<br></br><br></br>
+                  <span className="font-bold">3. Infrastructure Issues:</span><br></br><br></br>
+                  <span className="font-bold">- Challenge:</span> Inconsistent access to reliable electricity and internet connectivity, particularly in rural areas.<br></br>
+                  <span className="font-bold">- Example:</span> In districts like Karongi and Nyamasheke, where infrastructure development is still catching up, maintaining and updating SpeedSense devices could be challenging.<br></br><br></br>
 
-                  4. Cultural Acceptance: Introducing new technology often requires changing traditional farming methods used in many rural areas like Nyabihu and Rusizi and others alike, which might be met with resistance from local communities. Gaining trust and demonstrating the value of drones without disrupting cultural norms is essential.<br></br><br></br>
+                  <span className="font-bold">4. Regulatory and Compliance Hurdles:</span><br></br><br></br>
+                  <span className="font-bold">- Challenge:</span> Navigating stringent regulatory frameworks and obtaining necessary approvals.<br></br>
+                  <span className="font-bold">- Example:</span> Ensuring compliance with regulations from the Rwanda Utilities Regulatory Authority (RURA) and the Rwanda National Police for device installation and usage can be time-consuming and complex.<br></br><br></br>
 
-                  5. Logistics and Maintenance: Developing a robust system for the distribution and maintenance of drone technology in rural areas like karongi and many more like it can be challenging. Ensuring that parts and technical support are readily available is crucial for the sustainability of the project.<br></br><br></br>
+                  <span className="font-bold">5. Cultural Acceptance:</span><br></br><br></br>
+                  <span className="font-bold">- Challenge:</span> Resistance to new technologies and changes in driving behavior.<br></br>
+                  <span className="font-bold">- Example:</span> Drivers in traditional communities may be skeptical of the benefits of SpeedSense technology, requiring extensive community engagement and educational campaigns to build trust.<br></br><br></br>
 
-                  6. Environmental Concerns: While drones can reduce the amount of pesticide used, their impact on the environment, including potential contamination from battery use and disposal, needs careful management.<br></br><br></br>
+                  <span className="font-bold">6. Geographical and Environmental Factors:</span><br></br><br></br>
+                  <span className="font-bold">- Challenge:</span> Diverse and challenging road conditions, including mountainous terrain.<br></br>
+                  <span className="font-bold">- Example:</span> Roads in the Northern Province, which are often steep and winding, require SpeedSense devices that can handle a variety of driving conditions and provide accurate feedback.<br></br><br></br>
 
-                  7. Weather Dependency: Drone operations can be highly sensitive to weather conditions. Rwanda’s varied climate, with its rainy seasons, can limit the operational days for drones, affecting their efficiency.<br></br><br></br>
+                  <span className="font-bold">7. Data Privacy and Security Concerns:</span><br></br><br></br>
+                  <span className="font-bold"> - Challenge:</span> Ensuring the privacy and security of data collected by SpeedSense devices.<br></br>
+                  <span className="font-bold">- Example:</span> Drivers might be concerned about how their driving data will be used and stored, especially with incidents of data breaches reported in the past.<br></br><br></br>
+
+                  <span className="font-bold">8. Funding and Financial Sustainability:</span><br></br><br></br>
+                  <span className="font-bold">- Challenge:</span> Securing sustained funding and financial support for long-term implementation.<br></br>
+                  <span className="font-bold">- Example:</span> Reliance on funding from the Rwandan government and international grants, such as those from the African Development Bank (AfDB), is crucial to ensure the project's viability and scalability.<br></br><br></br>
+
+                  By addressing these challenges, the SpeedSense project can be better tailored to the unique conditions and needs of the country, ensuring greater effectiveness and adoption.
                 </p>
               </div>
             </div>

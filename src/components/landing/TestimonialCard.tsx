@@ -6,13 +6,13 @@ function TestimonialCard() {
                 <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
             </svg>
             <blockquote>
-                <p className="text-2xl italic font-medium text-gray-900">"There are four essential elements that an effective paragraph should consistently contain: unity, coherence, a topic sentence, and sufficient development."</p>
+                <p className="text-2xl italic font-medium text-gray-900">"I first used projexess to test it out and see if it is really what it seems and it has turned out to amaze me more and exceed my expectations."</p>
             </blockquote>
             <figcaption className="flex items-center justify-center mt-6 space-x-3 rtl:space-x-reverse">
                 <img className="w-6 h-6 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="profile picture" />
                 <div className="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-500 dark:divide-gray-700">
-                    <cite className="pe-3 font-medium text-gray-900 ">Michael Gough</cite>
-                    <cite className="ps-3 text-sm text-gray-500 dark:text-gray-400">CEO at Google</cite>
+                    <cite className="pe-3 font-medium text-gray-900 ">Ineza Gloria</cite>
+                    <cite className="ps-3 text-sm text-gray-500 dark:text-gray-400">CEO at SpeedSenser</cite>
                 </div>
             </figcaption>
         </figure>

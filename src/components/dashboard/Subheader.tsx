@@ -1,7 +1,7 @@
-import { RootState } from '@/redux/store'
+// import { RootState } from '@/redux/store'
 import { Avatar } from 'flowbite-react'
 import { Search } from 'lucide-react'
-import { useSelector } from 'react-redux'
+// import { useSelector } from 'react-redux'
 
 type Props = {
     title: string,
@@ -10,7 +10,7 @@ type Props = {
 
 function Subheader({ title, description }: Props) {
 
-    const { project } = useSelector((state: RootState) => state.projectReducer)
+    const project = JSON.parse(localStorage.getItem('userinfo')!).project
     return (
         <div className='w-full p-4 flex flex-col gap-7 items-start justify-start'>
             <div>

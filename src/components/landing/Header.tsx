@@ -5,8 +5,7 @@ import { Link } from "react-router-dom"
 
 const navItems = [
     { name: "Home", link: '' },
-    { name: "Product", link: '' },
-    { name: "Analytics", link: '' },
+    { name: "Explore", link: '/auth/login' },
 ]
 
 function LandingHeader() {

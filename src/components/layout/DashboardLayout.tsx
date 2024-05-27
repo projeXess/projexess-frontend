@@ -5,15 +5,16 @@ import DashboardAppProvider from '@/providers/Dashboard/DashboardAppProvider'
 import { AsideContext } from '@/providers/Dashboard/AsideProvider'
 import DashboardLoading from '../dashboard/Loading'
 import MainLoader from '../dashboard/MainLoader'
-import { useSelector } from 'react-redux'
-import { RootState } from '@/redux/store'
+// import { useSelector } from 'react-redux'
+// import { RootState } from '@/redux/store'
 
 type Props = { children: React.ReactNode }
 
 function DashboardLayout({ children }: Props) {
 
     const { state } = React.useContext(AsideContext)
-    const { user } = useSelector((state: RootState) => state.userReducer)
+    // const { user } = useSelector((state: RootState) => state.userReducer)
+    const user = JSON.parse(localStorage.getItem('userinfo')!).user
 
     return (
         <Suspense fallback={<MainLoader />}>
@@ -22,7 +23,8 @@ function DashboardLayout({ children }: Props) {
                     user?.email === "numwalilydia2022@gmail.com" ||
                     user?.email === "ishimwejustin67@gmail.com" ||
                     user?.email === "itsmugishasamuella@gmail.com" ||
-                    user?.email === "micodan369@gmail.com") || process.env.NODE_ENV === "development" ? (
+                    user?.email === "glorineza2@gmail.com" ||
+                    user?.email === "micodan369@gmail.com") ? (
                     <DashboardAppProvider>
                         <section>
                             <Header />
@@ -39,14 +41,13 @@ function DashboardLayout({ children }: Props) {
                     </DashboardAppProvider>
                 ) : (
                     <div className='w-full h-[100dvh] grid place-content-center '>
-                        <h1>Dashboard still under development. </h1>
+                        <h1>Apologies ! Dashboard is still under development and unaccessible to some members. </h1>
                     </div>
                 )
             }
         </Suspense>
 
     )
-
 }
 
 export default DashboardLayout

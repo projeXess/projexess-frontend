@@ -4,9 +4,11 @@ import './index.css'
 import { createHashRouter, RouterProvider } from 'react-router-dom'
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import AuthLayout from './components/layout/AuthLayout';
-import { store } from './redux/store'
-import { Provider } from 'react-redux'
+// import { store } from './redux/store'
+// import { Provider } from 'react-redux'
 import MainLoader from './components/dashboard/MainLoader';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -24,7 +26,6 @@ const Dashboard = lazy(() => import('@/pages/(dashboard)/dashboard'))
 const Index = lazy(() => import('@/pages/(root)'))
 const Documents = lazy(() => import('@/pages/(dashboard)/dashboard/Documents'))
 const Team = lazy(() => import('@/pages/(dashboard)/dashboard/Team'))
-const TeamMember = lazy(() => import('@/pages/(dashboard)/dashboard/Team/TeamMember.tsx'))
 const Login = lazy(() => import('@/pages/(auth)/Login'))
 const Signup = lazy(() => import('@/pages/(auth)/Signup'))
 const CreateProject = lazy(() => import('@/pages/(auth)/CreateProject'))
@@ -64,11 +65,7 @@ const router = createHashRouter(
     {
       path: '/dashboard/team',
       element: <DashboardLayout><Team /></DashboardLayout>
-    }, {
-      path: '/dashboard/team/:name',
-      element: <DashboardLayout><TeamMember /></DashboardLayout>
     },
-
     {
       path: '/auth/signup',
       element: <AuthLayout><Signup /></AuthLayout>
@@ -104,9 +101,10 @@ const router = createHashRouter(
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <React.Suspense fallback={<MainLoader/>}>
-      <Provider store={store}>
+      {/* <Provider store={store}> */}
         <RouterProvider router={router} />
-      </Provider>
+        <ToastContainer position="top-right" limit={1} />
+      {/* </Provider> */}
     </React.Suspense>
   </React.StrictMode>,
 )

@@ -20,18 +20,18 @@ export const settingsItems = [
 
 
 export const teams = [
-  { name: "Frontend Devs", members: 5, progress: 70, task: "The designers were assigned the role to design the project from the start to end of it following the documentation of the project that was shared." },
-  { name: "Backend Devs", members: 3, progress: 43, task: "They were assigned to do the API endpoints and database connections only and immediately integrate with frontend." },
-  { name: "Designers", members: 2, progress: 87, task: "Front end developers were assigned to finish the dashboards and main functionalities on the User interface first and the authentication pages." },
+  { name: "Frontend Devs", members: 5, progress: 70, task: "In the current project phase, the assignment of roles to the designers has not yet been finalized.  Discussions are ongoing to assess the project's design needs and the strengths of each designer, with the aim of making well-informed decisions that will benefit the project in the long run. " },
+  { name: "Backend Devs", members: 3, progress: 43, task: "For the backend developers, role assignments are also pending at this stage of the project.  Detailed discussions are underway to assess the project's backend development requirements and the strengths of each developer, with the goal of making informed decisions that will enhance the overall efficiency." },
+  { name: "Designers", members: 2, progress: 87, task: "Similarly, role assignments for the frontend developers have not yet been finalized.  Extensive discussions are in progress to evaluate the project's frontend development needs and the strengths of each developer, with the intention of making well-considered choices that will advance the project's frontend development efforts." },
 
 ]
 
 
 export const tasksCompleted = [
-  { name: "Homepage", description: "The home page was completed with all needed functionalities. The main section is completed, the footer and others are also completed on the home page." },
-  { name: "Documentation", description: "The home page was completed with all needed functionalities. The main section is completed, the footer and others are also completed on the home page." },
-  { name: "Homepage", description: "The home page was completed with all needed functionalities. The main section is completed, the footer and others are also completed on the home page." },
-  { name: "Documentation", description: "The home page was completed with all needed functionalities. The main section is completed, the footer and others are also completed on the home page." },
+  { name: "Initiation", description: "SpeedSenser kicked off the project by defining its purpose, scope, and feasibility. The project charter was established, outlining key stakeholders and initial budgets and actions to be taken" },
+  { name: "Team Setup", description: "SpeedSenser assembled the project team, assigning roles and responsibilities. Communication channels were established, and project management tools were set up to ensure the team had the necessary resources." },
+  { name: "Timeline", description: "SpeedSenser was given a detailed project timeline, mapping out major milestones, tasks, and deliverables. This timeline provided a clear schedule for the project's progress." },
+  { name: "Information Gathering", description: "SpeedSenser has been presented with all relevant project information. This included gathering requirements from stakeholders, researching best practices, and compiling necessary data and resources for the project." },
 ]
 
 

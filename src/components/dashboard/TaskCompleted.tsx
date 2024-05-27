@@ -19,7 +19,7 @@ function TaskCompleted({ name, description }: Props) {
                     console.log("Hello world")
                 }
             >
-                Code
+                View
                 <ArrowRight className='rotate-[-45deg]' />
             </Button>
         </div>

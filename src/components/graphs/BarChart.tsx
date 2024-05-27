@@ -17,15 +17,17 @@ const BarChart: React.FC = () => {
             myChart = new Chart(chartRef.current, {
                 type: 'bar',
                 data: {
-                    labels: ['Frontend', 'Designers', 'Backend', 'Engineers'],
+                    labels: ['Project Manager', 'Frontend', 'Designers', 'Backend', 'Data Analyst', 'Field Technician'],
                     datasets: [{
                         label: '.',
-                        data: [12, 19, 3, 5],
+                        data: [5, 1, 1, 1, 2, 1],
                         backgroundColor: [
-                            '#EC79F5',
-                            '#9578FD',
-                            '#4EE4CC',
-                            '#A2A3FF',
+                            '#f55442',
+                            '#7FFFD4',
+                            '#FFA07A',
+                            '#87CEEB',
+                            '#FF69B4',
+                            '#8A2BE2    '
                         ],
                         barThickness: 50,
                         borderRadius: 10,
