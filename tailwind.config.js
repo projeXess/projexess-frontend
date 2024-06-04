@@ -1,3 +1,4 @@
+
 /** @type {import('tailwindcss').Config} */
 
 
@@ -12,4 +13,4 @@ export default {
   },
   plugins: [import("tailwindcss-animate"), import("flowbite/plugin")],
 
-}
+};
