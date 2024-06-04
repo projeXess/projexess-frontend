@@ -30,7 +30,7 @@ function Header() {
                         <h1 className='md:text-[1.5rem] text-[0.8rem] font-bold' >ProjeXess</h1>
                     </div>
                 </div>
-                <div className='hidden p-1 items-center gap-7 sm:flex md:text-[1rem] text-[0.6rem]'>
+{/*                 <div className='hidden p-1 items-center gap-7 sm:flex md:text-[1rem] text-[0.6rem]'>
                     {
                         navLinks.map(link => (
                             <Link to={link.link} className='flex items-center gap-1 md:gap-2 cursor-pointer hover:text-black text-[#5C5C5C]' key={link.name}>
@@ -43,12 +43,12 @@ function Header() {
                     <Button className='bg-[#3AA1FF] text-white font-bold hidden lg:block md:text-[1rem] text-[0.6rem]'>
                         Create
                     </Button>
-                </div>
+                </div> */}
                 <div className='flex items-center gap-2'>
-                    <div className='items-center p-1 w-[180px] justify-around border-2 rounded-xl bg-white pr-3 pl-3 hidden lg:flex'>
+{/*                     <div className='items-center p-1 w-[180px] justify-around border-2 rounded-xl bg-white pr-3 pl-3 hidden lg:flex'>
                         <Input placeholder='search' className=' border-none w-full p-0 focus:outline-none' />
                         <Search />
-                    </div>
+                    </div> */}
                     <Button className='bg-white hover:bg-white size-6 lg:size-10' size={'icon'}>
                         <BellIcon fill='black' className='bg-white text-black rotate-[45deg]' />
                     </Button>
